@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Footer — hasSy UI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="demo-header">
+  <p class="demo-kicker">hasSy UI · Component</p>
+  <h1>Footer</h1>
+  <p class="demo-hint">Copy <code>style.css</code> + <code>script.js</code>. Newsletter signup confirms inline, social links report status, back-to-top scrolls smoothly.</p>
+</header>
+
+<div class="demo-spacer" aria-hidden="true">
+  <p>Scroll down to the footer ↓</p>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-col brand-col">
+      <div class="logo">hasSy</div>
+      <p>Curated tours and travel experiences, planned around you.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Tours</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Booking Policy</a></li>
+        <li><a href="#">Cancellations</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col newsletter-col">
+      <h4>Stay Updated</h4>
+      <p>Get news on new tours and offers.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <label class="visually-hidden" for="newsletterEmail">Your email</label>
+        <input type="email" id="newsletterEmail" placeholder="Your email" required>
+        <button type="submit" class="orange-btn">Join</button>
+      </form>
+      <p class="newsletter-msg" id="newsletterMsg" role="status" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 hasSy. All rights reserved.</p>
+    <div class="socials">
+      <a href="#" data-social="Facebook" aria-label="Facebook (demo link)">FB</a>
+      <a href="#" data-social="Instagram" aria-label="Instagram (demo link)">IG</a>
+      <a href="#" data-social="Twitter" aria-label="Twitter (demo link)">TW</a>
+    </div>
+    <button class="back-to-top" id="backToTop" type="button">Back to top ↑</button>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

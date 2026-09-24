@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cart — hasSy UI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="demo-header">
+  <p class="demo-kicker">hasSy UI · Component</p>
+  <h1>Shopping Cart</h1>
+  <p class="demo-hint">Copy <code>style.css</code> + <code>script.js</code>. Quantity controls, remove, live totals and an empty state all work out of the box.</p>
+</header>
+
+<div class="cart-panel">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <span class="cart-count" id="cartCount">3 items</span>
+  </div>
+
+  <ul class="cart-items" id="cartItems">
+    <li class="cart-item" data-price="45">
+      <div class="item-img" aria-hidden="true">🏜️</div>
+      <div class="item-info">
+        <h4>Desert Safari Tour</h4>
+        <p class="item-price">$45.00</p>
+      </div>
+      <div class="qty-control" role="group" aria-label="Quantity for Desert Safari Tour">
+        <button class="qty-btn minus" type="button" aria-label="Decrease quantity">−</button>
+        <span class="qty-value" aria-live="polite">1</span>
+        <button class="qty-btn plus" type="button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="remove-btn" type="button" aria-label="Remove Desert Safari Tour">×</button>
+    </li>
+
+    <li class="cart-item" data-price="70">
+      <div class="item-img" aria-hidden="true">🏙️</div>
+      <div class="item-info">
+        <h4>City Heritage Walk</h4>
+        <p class="item-price">$70.00</p>
+      </div>
+      <div class="qty-control" role="group" aria-label="Quantity for City Heritage Walk">
+        <button class="qty-btn minus" type="button" aria-label="Decrease quantity">−</button>
+        <span class="qty-value" aria-live="polite">1</span>
+        <button class="qty-btn plus" type="button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="remove-btn" type="button" aria-label="Remove City Heritage Walk">×</button>
+    </li>
+
+    <li class="cart-item" data-price="120">
+      <div class="item-img" aria-hidden="true">⛰️</div>
+      <div class="item-info">
+        <h4>Mountain Trek Package</h4>
+        <p class="item-price">$120.00</p>
+      </div>
+      <div class="qty-control" role="group" aria-label="Quantity for Mountain Trek Package">
+        <button class="qty-btn minus" type="button" aria-label="Decrease quantity">−</button>
+        <span class="qty-value" aria-live="polite">1</span>
+        <button class="qty-btn plus" type="button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="remove-btn" type="button" aria-label="Remove Mountain Trek Package">×</button>
+    </li>
+  </ul>
+
+  <p class="cart-empty" id="cartEmpty" hidden>Your cart is empty — remove nothing, add something!</p>
+
+  <div class="cart-summary">
+    <div class="summary-row">
+      <span>Subtotal</span>
+      <span id="cartSubtotal">$235.00</span>
+    </div>
+    <div class="summary-row">
+      <span>Taxes &amp; Fees</span>
+      <span>$0.00</span>
+    </div>
+    <div class="summary-row total-row">
+      <span>Total</span>
+      <span id="cartTotal">$235.00</span>
+    </div>
+    <button class="orange-btn full-width" id="checkoutBtn" type="button">Checkout</button>
+    <p class="checkout-msg" id="checkoutMsg" role="status" aria-live="polite"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

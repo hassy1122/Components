@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagination — hasSy UI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="demo-header">
+  <p class="demo-kicker">hasSy UI · Component</p>
+  <h1>Pagination</h1>
+  <p class="demo-hint">Copy <code>style.css</code> + <code>script.js</code>. 8 pages with smart ellipsis, correct disabled edges and <code>aria-current</code> — prev/next work from every page.</p>
+</header>
+
+<div class="pagination-panel">
+  <p class="panel-hint" id="pageHeading">Showing page 1 of 8</p>
+
+  <nav class="pagination" aria-label="Pagination">
+    <button class="page-btn prev" id="prevBtn" type="button" disabled>← Prev</button>
+    <ul class="page-list" id="pageList"></ul>
+    <button class="page-btn next" id="nextBtn" type="button">Next →</button>
+  </nav>
+
+  <p class="panel-status" id="pageStatus" role="status" aria-live="polite">Page 1 selected</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Bar — hasSy UI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="demo-header">
+  <p class="demo-kicker">hasSy UI · Component</p>
+  <h1>Search Bar</h1>
+  <p class="demo-hint">Copy <code>style.css</code> + <code>script.js</code>. Filters the list live — try arrow keys to move, <kbd>Enter</kbd> to select, <kbd>Esc</kbd> to clear.</p>
+</header>
+
+<div class="search-wrap">
+  <form class="search-bar" id="searchForm" role="search">
+    <label class="visually-hidden" for="searchInput">Search tours</label>
+    <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16">
+      <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
+      <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    <input
+      type="search"
+      id="searchInput"
+      placeholder="Search tours…"
+      autocomplete="off"
+      aria-controls="results"
+      aria-expanded="false"
+      aria-autocomplete="list"
+    >
+    <button class="clear-btn" id="clearBtn" type="button" aria-label="Clear search" hidden>×</button>
+  </form>
+
+  <ul class="results" id="results" role="listbox" aria-label="Search results"></ul>
+  <p class="search-status" id="searchStatus" role="status" aria-live="polite">4 tours available</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+/* ==========================================================
+   hasSy UI — Navigation / breadcrumbs component
+   ========================================================== */
+
+:root {
+  --bg-dark: #1a2e2e;
+  --surface: #f4f6f6;
+  --surface-2: #ffffff;
+  --border: #d7dcdc;
+  --text: #152828;
+  --text-2: #3c5252;
+  --text-muted: #6b7f7f;
+  --link-color: #ff5c5c;
+  --accent-orange: orange;
+  --accent-ink: #b35a00;
+  --radius-sm: 6px;
+  --radius: 8px;
+  --radius-lg: 16px;
+  --shadow-1: 0 1px 2px rgba(21, 40, 40, 0.05), 0 6px 18px rgba(21, 40, 40, 0.07);
+  --shadow-2: 0 2px 6px rgba(21, 40, 40, 0.08), 0 18px 44px rgba(21, 40, 40, 0.14);
+  --font: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+body {
+  background:
+    radial-gradient(700px 300px at 50% -10%, rgba(255, 165, 0, 0.1), transparent 60%),
+    var(--surface);
+  color: var(--text);
+  min-height: 100vh;
+  padding-bottom: 64px;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: rgba(255, 165, 0, 0.35); color: var(--text); }
+
+:focus-visible {
+  outline: 3px solid var(--accent-orange);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+code {
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.88em;
+  background: #e9eeee;
+  border: 1px solid var(--border);
+  padding: 1px 6px;
+  border-radius: 4px;
+  color: #8a4b00;
+}
+
+/* ---------- Demo header ---------- */
+.demo-header {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: clamp(36px, 7vw, 64px) clamp(18px, 5vw, 32px) clamp(24px, 4vw, 36px);
+  text-align: center;
+}
+
+.demo-kicker {
+  color: var(--accent-ink);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.demo-header h1 {
+  font-size: clamp(1.7rem, 4.5vw, 2.5rem);
+  letter-spacing: -0.02em;
+  color: var(--bg-dark);
+  margin-bottom: 10px;
+}
+
+.demo-hint {
+  color: var(--text-2);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  max-width: 58ch;
+  margin: 0 auto;
+}
+
+/* ---------- Breadcrumbs ---------- */
+.breadcrumbs {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 clamp(18px, 5vw, 32px);
+}
+
+.breadcrumbs ol {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  box-shadow: var(--shadow-1);
+  font-size: 14px;
+}
+
+.breadcrumbs li { display: flex; align-items: center; gap: 4px; }
+
+.breadcrumbs li + li::before {
+  content: "/";
+  color: var(--text-muted);
+  margin-right: 4px;
+  opacity: 0.7;
+}
+
+.breadcrumbs a {
+  color: var(--link-color);
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:focus-visible {
+  color: var(--accent-ink);
+  background: rgba(255, 165, 0, 0.14);
+  text-decoration: underline;
+}
+
+.breadcrumbs li > [aria-current="page"] {
+  color: var(--text-2);
+  font-weight: 700;
+  padding: 4px 8px;
+}
+
+/* ---------- Stage ---------- */
+.page-stage {
+  max-width: 760px;
+  margin: 20px auto 0;
+  padding: 0 clamp(18px, 5vw, 32px);
+}
+
+.page-view {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: clamp(22px, 4vw, 32px);
+  box-shadow: var(--shadow-2);
+  animation: viewIn 0.35s cubic-bezier(.22, 1, .36, 1);
+}
+
+@keyframes viewIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page-view h2 {
+  color: var(--bg-dark);
+  font-size: 1.35rem;
+  letter-spacing: -0.015em;
+  margin-bottom: 10px;
+}
+
+.page-view p {
+  color: var(--text-2);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.placeholder-block {
+  margin-top: 18px;
+  height: 140px;
+  display: grid;
+  place-items: center;
+  font-size: 54px;
+  background: linear-gradient(135deg, #e7efef, #d9e6e6);
+  border-radius: var(--radius);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}

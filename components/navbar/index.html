@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navbar — hasSy UI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="demo-header">
+  <p class="demo-kicker">hasSy UI · Component</p>
+  <h1>Navbar</h1>
+  <p class="demo-hint">Copy <code>style.css</code> + <code>script.js</code>. Sticky on scroll, hover/focus/click dropdowns, mobile hamburger.</p>
+</header>
+
+<nav class="navbar" aria-label="Primary">
+  <div class="logo">hasSy</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#" class="active" aria-current="page">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li class="has-dropdown" id="toursItem">
+      <a href="#" id="toursToggle" aria-expanded="false" aria-controls="toursMenu">Tours <span class="caret" aria-hidden="true"></span></a>
+      <ul class="dropdown" id="toursMenu">
+        <li><a href="#">Group Tours</a></li>
+        <li><a href="#">Private Tours</a></li>
+        <li><a href="#">Custom Packages</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+  <div class="nav-actions">
+    <button class="orange-btn" id="bookBtn">Book Now</button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main class="demo-body">
+  <section class="demo-card">
+    <h2>Scroll to see it stick</h2>
+    <p>This demo page has extra content so you can watch the navbar pin to the top of the viewport.
+      Resize below 768&nbsp;px to try the hamburger menu, and hover, focus with <kbd>Tab</kbd>,
+      or click <strong>Tours</strong> to open the dropdown.</p>
+  </section>
+  <div class="filler" aria-hidden="true"></div>
+  <section class="demo-card">
+    <h2>Keyboard friendly</h2>
+    <p>Every control is reachable with <kbd>Tab</kbd>. Press <kbd>Esc</kbd> to close the dropdown or the
+      mobile menu, and the Book&nbsp;Now button confirms with a toast.</p>
+  </section>
+  <div class="filler short" aria-hidden="true"></div>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

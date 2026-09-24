@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Box — hasSy UI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="demo-header">
+  <p class="demo-kicker">hasSy UI · Component</p>
+  <h1>Product Box</h1>
+  <p class="demo-hint">Copy <code>style.css</code> + <code>script.js</code>. Wishlist toggles (<code>aria-pressed</code>), add-to-cart confirms inline — used across the card grids.</p>
+</header>
+
+<div class="product-grid" id="productGrid">
+  <div class="product-box">
+    <div class="product-img">
+      <span class="badge">Bestseller</span>
+      <button class="wishlist-btn" type="button" aria-pressed="false" aria-label="Add Desert Safari Tour to wishlist">♡</button>
+      <div class="img-placeholder" aria-hidden="true">🏜️</div>
+    </div>
+    <div class="product-info">
+      <div class="rating" aria-label="Rated 4.8 out of 5">★★★★★ <span>4.8</span></div>
+      <h3>Desert Safari Tour</h3>
+      <p class="price">$45.00 <span class="per">/ person</span></p>
+      <div class="product-actions">
+        <button class="orange-btn" type="button">Add to Cart</button>
+        <span class="action-msg" role="status" aria-live="polite"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-box">
+    <div class="product-img">
+      <span class="badge new">New</span>
+      <button class="wishlist-btn" type="button" aria-pressed="false" aria-label="Add City Heritage Walk to wishlist">♡</button>
+      <div class="img-placeholder" aria-hidden="true">🏙️</div>
+    </div>
+    <div class="product-info">
+      <div class="rating" aria-label="Rated 4.6 out of 5">★★★★★ <span>4.6</span></div>
+      <h3>City Heritage Walk</h3>
+      <p class="price">$70.00 <span class="per">/ person</span></p>
+      <div class="product-actions">
+        <button class="orange-btn" type="button">Add to Cart</button>
+        <span class="action-msg" role="status" aria-live="polite"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-box">
+    <div class="product-img">
+      <button class="wishlist-btn" type="button" aria-pressed="false" aria-label="Add Mountain Trek Package to wishlist">♡</button>
+      <div class="img-placeholder" aria-hidden="true">⛰️</div>
+    </div>
+    <div class="product-info">
+      <div class="rating" aria-label="Rated 4.9 out of 5">★★★★★ <span>4.9</span></div>
+      <h3>Mountain Trek Package</h3>
+      <p class="price">$120.00 <span class="per">/ person</span></p>
+      <div class="product-actions">
+        <button class="orange-btn" type="button">Add to Cart</button>
+        <span class="action-msg" role="status" aria-live="polite"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-box">
+    <div class="product-img">
+      <span class="badge sale">-20%</span>
+      <button class="wishlist-btn" type="button" aria-pressed="false" aria-label="Add Sunset Cruise to wishlist">♡</button>
+      <div class="img-placeholder" aria-hidden="true">🌇</div>
+    </div>
+    <div class="product-info">
+      <div class="rating" aria-label="Rated 4.7 out of 5">★★★★★ <span>4.7</span></div>
+      <h3>Sunset Cruise</h3>
+      <p class="price">$80.00 <span class="per">/ person</span></p>
+      <div class="product-actions">
+        <button class="orange-btn" type="button">Add to Cart</button>
+        <span class="action-msg" role="status" aria-live="polite"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

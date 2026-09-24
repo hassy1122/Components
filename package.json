@@ -1,0 +1,12 @@
+{
+  "name": "hassy-component-library",
+  "version": "1.0.0",
+  "description": "108 modular UI components built with plain HTML, CSS, and vanilla JS — copy-paste ready, no build step required.",
+  "author": "hasSy",
+  "license": "MIT",
+  "homepage": ".",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  }
+}

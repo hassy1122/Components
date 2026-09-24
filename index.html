@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="hasSy Component Library — 108 copy-paste UI components with live previews and complete code. Plain HTML, CSS and vanilla JS.">
+<title>hasSy Component Library — 108 Copy &amp; Paste UI Components</title>
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js-ready');</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <p class="eyebrow">Design system · <span id="eyebrowCount">108</span> components · <span id="eyebrowCats">11</span> categories</p>
+    <h1 class="word-drop"><span class="brand">hasSy</span> Component Library</h1>
+    <p class="hero-sub"><span id="heroCount">108</span> production-ready UI components — live preview plus complete, self-contained code for every one. No frameworks, no build step, just copy and paste.</p>
+    <div class="hero-stats" role="list">
+      <div class="stat" role="listitem"><strong id="statComponents">108</strong><span>Components</span></div>
+      <div class="stat" role="listitem"><strong id="statCategories">11</strong><span>Categories</span></div>
+      <div class="stat" role="listitem"><strong>0</strong><span>Dependencies</span></div>
+      <div class="stat" role="listitem"><strong>1-click</strong><span>Copy code</span></div>
+    </div>
+    <div class="hero-actions">
+      <a class="btn" href="#library">Browse components</a>
+      <a class="btn ghost" href="#usage">How to use</a>
+    </div>
+  </div>
+</header>
+
+<div class="page">
+  <aside class="sidebar" aria-label="Table of contents">
+    <nav class="toc" aria-label="On this page">
+      <button class="toc-expand" id="tocExpand" type="button" aria-expanded="false">☰ Contents</button>
+      <div class="toc-search">
+        <svg class="toc-search-ic" width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input type="search" id="tocSearch" placeholder="Filter components…" aria-label="Filter components" autocomplete="off">
+      </div>
+      <p class="toc-title">Getting started</p>
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#usage">How to use</a></li>
+        <li><a href="#tokens">Design tokens</a></li>
+      </ul>
+      <div id="tocComponents"><!-- category groups rendered by script.js --></div>
+      <p class="toc-empty" id="tocEmpty" hidden>No components match your filter.</p>
+    </nav>
+  </aside>
+
+  <main id="main" class="content">
+
+    <section id="intro" class="section reveal" aria-labelledby="introTitle">
+      <p class="eyebrow">Introduction</p>
+      <h2 id="introTitle" class="section-title word-drop">Plain HTML, CSS &amp; JS</h2>
+      <p class="section-text"><span id="introCount">108</span> components covering everything a website needs — navigation, buttons, forms, cards, overlays, data display, e-commerce, loaders and more. Every component ships as one complete HTML document: hit <strong>Copy code</strong>, paste it into an <code>.html</code> file, open it in a browser. That's it. No frameworks, no dependencies, no build tooling.</p>
+    </section>
+
+    <section id="usage" class="section reveal" aria-labelledby="usageTitle">
+      <p class="eyebrow">Getting started</p>
+      <h2 id="usageTitle" class="section-title word-drop">How to use</h2>
+      <ol class="usage-steps">
+        <li><strong>Pick a component</strong> from the sidebar — every entry jumps straight to its live preview.</li>
+        <li><strong>Preview it live</strong> — each demo runs in an isolated frame, exactly like the code you copy.</li>
+        <li><strong>Hit “Copy code”</strong> — you get the full document: markup, styles and script in one block.</li>
+        <li><strong>Paste into a file</strong> — save as <code>component.html</code> and open it. Working component, zero setup.</li>
+      </ol>
+      <p class="section-text">Preview everything locally with <code>npx serve .</code> (or <code>npm start</code>), or open any component in a new tab with <strong>Open demo</strong>.</p>
+    </section>
+
+    <section id="tokens" class="section reveal" aria-labelledby="tokensTitle">
+      <p class="eyebrow">Design system</p>
+      <h2 id="tokensTitle" class="section-title word-drop">Design tokens</h2>
+      <p class="section-text">Shared CSS custom properties baked into every component's <code>:root</code> — recolor the whole library from one place.</p>
+      <ul class="swatches">
+        <li class="swatch"><span class="chip" style="background:#0f1f1e"></span><code>--bg</code><em>#0f1f1e</em></li>
+        <li class="swatch"><span class="chip" style="background:#16302f"></span><code>--panel</code><em>#16302f</em></li>
+        <li class="swatch"><span class="chip" style="background:#1d3b39"></span><code>--panel-2</code><em>#1d3b39</em></li>
+        <li class="swatch"><span class="chip" style="background:#ff9f43"></span><code>--accent</code><em>#ff9f43</em></li>
+        <li class="swatch"><span class="chip" style="background:#ff5c5c"></span><code>--brand</code><em>#ff5c5c</em></li>
+        <li class="swatch"><span class="chip" style="background:#3ecf8e"></span><code>--ok</code><em>#3ecf8e</em></li>
+        <li class="swatch"><span class="chip" style="background:#ff6b6b"></span><code>--err</code><em>#ff6b6b</em></li>
+        <li class="swatch"><span class="chip" style="background:#a2b5b5"></span><code>--muted</code><em>#a2b5b5</em></li>
+      </ul>
+    </section>
+
+    <section id="library" class="section" aria-labelledby="libraryTitle">
+      <p class="eyebrow">Library</p>
+      <h2 id="libraryTitle" class="section-title word-drop">Components</h2>
+      <p class="section-text reveal">Every component below has a live preview and a complete code block. <strong>Copy code</strong> → paste into an <code>.html</code> file → open it. Use the sidebar to jump to any component instantly.</p>
+      <div id="libraryRoot"><!-- component sections rendered by script.js --></div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p>&copy; 2026 hasSy Component Library &mdash; <span id="footerCount">108</span> components built with plain HTML &amp; CSS</p>
+  <a href="#top">Back to top ↑</a>
+</footer>
+
+<script src="data/01-navigation.js"></script>
+<script src="data/02-buttons.js"></script>
+<script src="data/03-forms.js"></script>
+<script src="data/04-cards.js"></script>
+<script src="data/05-feedback.js"></script>
+<script src="data/06-overlays.js"></script>
+<script src="data/07-data-display.js"></script>
+<script src="data/08-media-sections.js"></script>
+<script src="data/09-ecommerce.js"></script>
+<script src="data/10-loaders.js"></script>
+<script src="data/11-utilities.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

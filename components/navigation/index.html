@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navigation — hasSy UI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="demo-header">
+  <p class="demo-kicker">hasSy UI · Component</p>
+  <h1>Navigation &amp; Breadcrumbs</h1>
+  <p class="demo-hint">Copy <code>style.css</code> + <code>script.js</code>. Click a crumb to move between demo "pages" without reloading — the trail and <code>aria-current</code> update together.</p>
+</header>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol id="crumbList">
+    <li><a href="#" data-page="home" aria-current="page">Home</a></li>
+    <li><a href="#" data-page="tours">Tours</a></li>
+    <li><a href="#" data-page="desert">Desert Safari</a></li>
+    <li><span aria-current="page">Booking</span></li>
+  </ol>
+</nav>
+
+<main class="page-stage" id="pageStage" aria-live="polite">
+  <section class="page-view" data-view="home">
+    <h2>Home</h2>
+    <p>This is the top-level demo page. Use the breadcrumb trail above to navigate deeper —
+      each level keeps the full trail visible so users always know where they are.</p>
+    <div class="placeholder-block" aria-hidden="true">🏠</div>
+  </section>
+
+  <section class="page-view" data-view="tours" hidden>
+    <h2>Tours</h2>
+    <p>Level 2. Breadcrumbs show Home › Tours. The current crumb is plain text with
+      <code>aria-current="page"</code>, never a link.</p>
+    <div class="placeholder-block" aria-hidden="true">🧭</div>
+  </section>
+
+  <section class="page-view" data-view="desert" hidden>
+    <h2>Desert Safari</h2>
+    <p>Level 3. Trail reads Home › Tours › Desert Safari. Hovering or tabbing highlights
+      each crumb, and the slash separators are decorative only.</p>
+    <div class="placeholder-block" aria-hidden="true">🏜️</div>
+  </section>
+
+  <section class="page-view" data-view="booking" hidden>
+    <h2>Booking</h2>
+    <p>Deepest level — the full trail is visible. Click any earlier crumb to jump back;
+      the demo never reloads the document.</p>
+    <div class="placeholder-block" aria-hidden="true">🎫</div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
