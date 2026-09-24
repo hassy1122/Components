@@ -17,7 +17,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Modal — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -25,7 +25,7 @@ a{color:inherit;text-decoration:none}
 .stage{width:min(680px,100%);background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:54px 30px;text-align:center;box-shadow:0 24px 60px rgba(0,0,0,.35)}
 .stage h3{font-size:1.15rem;letter-spacing:-.01em;margin-bottom:8px}
 .stage p{color:var(--muted);font-size:.92rem;max-width:46ch;margin:0 auto 24px}
-.btn{border:0;cursor:pointer;background:var(--accent);color:#14211f;font-weight:700;padding:12px 24px;border-radius:11px;font-size:.92rem;transition:.2s;box-shadow:0 10px 24px rgba(255,153,67,.22)}
+.btn{border:0;cursor:pointer;background:var(--accent);color:#14211f;font-weight:700;padding:12px 24px;border-radius:11px;font-size:.92rem;transition:.2s;box-shadow:0 10px 24px rgba(255, 165, 0,.22)}
 .btn:hover{filter:brightness(1.08);transform:translateY(-2px)}
 .btn:active{transform:none}
 .btn.ghost{background:transparent;color:var(--muted);border:1px solid var(--line);box-shadow:none}
@@ -34,7 +34,7 @@ a{color:inherit;text-decoration:none}
 .backdrop.show{opacity:1;visibility:visible}
 .modal{position:relative;width:min(430px,100%);background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:30px 28px 26px;transform:translateY(20px) scale(.96);transition:.3s cubic-bezier(.22,1,.36,1);box-shadow:0 34px 80px rgba(0,0,0,.55)}
 .backdrop.show .modal{transform:none}
-.icon{width:50px;height:50px;border-radius:14px;background:rgba(255,153,67,.15);border:1px solid rgba(255,153,67,.3);display:grid;place-items:center;font-size:1.5rem;margin-bottom:16px}
+.icon{width:50px;height:50px;border-radius:14px;background:rgba(255, 165, 0,.15);border:1px solid rgba(255, 165, 0,.3);display:grid;place-items:center;font-size:1.5rem;margin-bottom:16px}
 .modal h2{font-size:1.2rem;letter-spacing:-.01em;margin-bottom:8px}
 .modal p{color:var(--muted);font-size:.92rem;margin-bottom:22px}
 .x{position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:9px;background:rgba(255,255,255,.06);border:1px solid var(--line);color:var(--muted);cursor:pointer;transition:.18s;display:grid;place-items:center;font-size:.85rem}
@@ -91,7 +91,7 @@ document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setO
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Confirm Dialog — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -178,7 +178,7 @@ document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && ba
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dropdown Menu — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -188,17 +188,17 @@ a{color:inherit;text-decoration:none}
 .stage .lead{color:var(--muted);font-size:.92rem;max-width:46ch;margin:0 auto 24px}
 .dd{position:relative;display:inline-block}
 .trigger{border:1px solid var(--line);background:var(--panel-2);color:var(--text);font-weight:700;font-size:.92rem;padding:11px 18px;border-radius:11px;cursor:pointer;display:inline-flex;align-items:center;gap:9px;transition:.2s}
-.trigger:hover{border-color:rgba(255,153,67,.5);color:var(--accent)}
-.trigger[aria-expanded="true"]{border-color:var(--accent);color:var(--accent);box-shadow:0 0 0 4px rgba(255,153,67,.15)}
+.trigger:hover{border-color:rgba(255, 165, 0,.5);color:var(--accent)}
+.trigger[aria-expanded="true"]{border-color:var(--accent);color:var(--accent);box-shadow:0 0 0 4px rgba(255, 165, 0,.15)}
 .trigger .caret{transition:.25s;font-size:.7rem}
 .trigger[aria-expanded="true"] .caret{transform:rotate(180deg)}
 .menu{position:absolute;top:calc(100% + 10px);left:50%;transform:translate(-50%,10px);min-width:236px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:8px;opacity:0;visibility:hidden;transition:.22s cubic-bezier(.22,1,.36,1);box-shadow:0 22px 50px rgba(0,0,0,.5);text-align:left;z-index:40}
 .menu.show{opacity:1;visibility:visible;transform:translate(-50%,0)}
 .mi{width:100%;display:flex;align-items:center;gap:11px;padding:10px 12px;border:0;background:transparent;color:var(--muted);font-size:.9rem;font-weight:600;border-radius:9px;cursor:pointer;transition:.15s;text-align:left}
-.mi:hover{background:rgba(255,153,67,.13);color:var(--accent)}
+.mi:hover{background:rgba(255, 165, 0,.13);color:var(--accent)}
 .mi .ic{width:22px;text-align:center;font-size:.95rem}
 .mi kbd{margin-left:auto;font-size:.66rem;font-weight:800;color:var(--muted);background:rgba(255,255,255,.07);border:1px solid var(--line);border-radius:6px;padding:2px 7px}
-.mi:hover kbd{color:var(--accent);border-color:rgba(255,153,67,.4)}
+.mi:hover kbd{color:var(--accent);border-color:rgba(255, 165, 0,.4)}
 .mi.danger{color:#ff9b9b}
 .mi.danger:hover{background:rgba(255,107,107,.14);color:var(--err)}
 .sep{height:1px;background:var(--line);margin:7px 6px}
@@ -262,7 +262,7 @@ Array.prototype.forEach.call(menu.querySelectorAll('.mi'), function (item) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Side Drawer — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -270,7 +270,7 @@ a{color:inherit;text-decoration:none}
 .stage{width:min(680px,100%);background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:54px 30px;text-align:center;box-shadow:0 24px 60px rgba(0,0,0,.35)}
 .stage h3{font-size:1.15rem;margin-bottom:8px}
 .stage p{color:var(--muted);font-size:.92rem;max-width:47ch;margin:0 auto 24px}
-.btn{border:0;cursor:pointer;background:var(--accent);color:#14211f;font-weight:700;padding:12px 24px;border-radius:11px;font-size:.92rem;transition:.2s;box-shadow:0 10px 24px rgba(255,153,67,.22)}
+.btn{border:0;cursor:pointer;background:var(--accent);color:#14211f;font-weight:700;padding:12px 24px;border-radius:11px;font-size:.92rem;transition:.2s;box-shadow:0 10px 24px rgba(255, 165, 0,.22)}
 .btn:hover{filter:brightness(1.08);transform:translateY(-2px)}
 .backdrop{position:fixed;inset:0;background:rgba(0,0,0,.55);backdrop-filter:blur(5px);opacity:0;visibility:hidden;transition:.3s;z-index:90}
 .backdrop.show{opacity:1;visibility:visible}
@@ -286,16 +286,16 @@ a{color:inherit;text-decoration:none}
 .dbody{flex:1;overflow-y:auto;padding:20px 22px;display:grid;gap:12px;align-content:start}
 .lbl{font-size:.66rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:6px}
 .setting{display:flex;align-items:center;justify-content:space-between;gap:14px;background:var(--panel-2);border:1px solid var(--line);border-radius:12px;padding:14px 16px;transition:.2s}
-.setting:hover{border-color:rgba(255,153,67,.35)}
+.setting:hover{border-color:rgba(255, 165, 0,.35)}
 .setting b{display:block;font-size:.9rem}
 .setting span{font-size:.78rem;color:var(--muted)}
 .switch{position:relative;width:44px;height:26px;flex:0 0 auto}
 .switch input{position:absolute;inset:0;width:100%;height:100%;opacity:0;margin:0;cursor:pointer;z-index:2}
 .track{position:absolute;inset:0;background:rgba(0,0,0,.35);border:1px solid var(--line);border-radius:999px;transition:.25s}
 .track::after{content:"";position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:50%;background:var(--muted);transition:.25s}
-.switch input:checked + .track{background:rgba(255,153,67,.3);border-color:var(--accent)}
+.switch input:checked + .track{background:rgba(255, 165, 0,.3);border-color:var(--accent)}
 .switch input:checked + .track::after{transform:translateX(18px);background:var(--accent)}
-.switch input:focus-visible + .track{box-shadow:0 0 0 3px rgba(255,153,67,.35)}
+.switch input:focus-visible + .track{box-shadow:0 0 0 3px rgba(255, 165, 0,.35)}
 .dfoot{padding:16px 22px;border-top:1px solid var(--line);display:flex;gap:10px;background:rgba(0,0,0,.18)}
 .dfoot .btn{flex:1;padding:12px 16px}
 .ghost{background:transparent;color:var(--muted);border:1px solid var(--line);box-shadow:none}
@@ -361,7 +361,7 @@ document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setO
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Command Palette — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -371,7 +371,7 @@ a{color:inherit;text-decoration:none}
 .stage p{color:var(--muted);font-size:.92rem;max-width:48ch;margin:0 auto 22px}
 .keys{display:flex;gap:7px;justify-content:center;margin-bottom:24px}
 kbd{display:inline-grid;place-items:center;min-width:32px;height:32px;padding:0 10px;border-radius:8px;background:linear-gradient(180deg,#25403f,#1a3231);border:1px solid rgba(255,255,255,.14);border-bottom-width:3px;font-size:.78rem;font-weight:800;color:var(--text)}
-.btn{border:0;cursor:pointer;background:var(--accent);color:#14211f;font-weight:700;padding:12px 24px;border-radius:11px;font-size:.92rem;transition:.2s;box-shadow:0 10px 24px rgba(255,153,67,.22)}
+.btn{border:0;cursor:pointer;background:var(--accent);color:#14211f;font-weight:700;padding:12px 24px;border-radius:11px;font-size:.92rem;transition:.2s;box-shadow:0 10px 24px rgba(255, 165, 0,.22)}
 .btn:hover{filter:brightness(1.08);transform:translateY(-2px)}
 .status{margin-top:22px;font-size:.85rem;color:var(--muted);background:rgba(0,0,0,.22);border:1px dashed var(--line);border-radius:11px;padding:12px 16px;display:inline-block;max-width:100%}
 .status b{color:var(--ok)}
@@ -388,7 +388,7 @@ kbd{display:inline-grid;place-items:center;min-width:32px;height:32px;padding:0 
 .row{display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:11px;cursor:pointer;transition:.15s;font-size:.92rem;color:var(--muted)}
 .row .ic{width:30px;height:30px;border-radius:9px;background:rgba(255,255,255,.06);display:grid;place-items:center;font-size:.95rem;flex:0 0 auto}
 .row .sp{margin-left:auto;font-size:.68rem;font-weight:800;letter-spacing:.06em;color:#5f7878;white-space:nowrap}
-.row:hover,.row.sel{background:rgba(255,153,67,.14);color:var(--accent)}
+.row:hover,.row.sel{background:rgba(255, 165, 0,.14);color:var(--accent)}
 .row.sel .sp{color:var(--accent)}
 .empty{display:none;padding:30px 16px;text-align:center;color:var(--muted);font-size:.9rem}
 .kfoot{display:flex;justify-content:space-between;gap:10px;padding:11px 16px;border-top:1px solid var(--line);font-size:.74rem;color:var(--muted);background:rgba(0,0,0,.2)}
@@ -490,7 +490,7 @@ document.addEventListener('keydown', function (e) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lightbox — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -502,8 +502,8 @@ a{color:inherit;text-decoration:none}
 .thumb{aspect-ratio:4/3;border-radius:14px;border:2px solid transparent;cursor:pointer;display:grid;place-items:center;font-size:2.2rem;transition:.22s;position:relative;overflow:hidden}
 .thumb::after{content:attr(data-label);position:absolute;left:0;right:0;bottom:0;padding:8px 10px;font-size:.72rem;font-weight:700;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.55))}
 .thumb:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.3);box-shadow:0 14px 30px rgba(0,0,0,.4)}
-.thumb.on{border-color:var(--accent);box-shadow:0 0 0 3px rgba(255,153,67,.28)}
-.t1{background:linear-gradient(135deg,#ff9f43,#ff5c5c)}
+.thumb.on{border-color:var(--accent);box-shadow:0 0 0 3px rgba(255, 165, 0,.28)}
+.t1{background:linear-gradient(135deg,#ffa500,#ff5c5c)}
 .t2{background:linear-gradient(135deg,#3ecf8e,#0f9b8e)}
 .t3{background:linear-gradient(135deg,#5c7cfa,#a55eea)}
 .lb{position:fixed;inset:0;background:rgba(0,0,0,.86);backdrop-filter:blur(8px);z-index:90;display:grid;place-items:center;padding:26px;opacity:0;visibility:hidden;transition:.28s}

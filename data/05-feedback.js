@@ -17,7 +17,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alerts — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -33,7 +33,7 @@ a{color:inherit;text-decoration:none}
 .ic{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-weight:800;font-size:.95rem;flex:0 0 auto}
 .alert.info .ic{background:rgba(77,163,255,.15);color:#4da3ff}
 .alert.success .ic{background:rgba(62,207,142,.15);color:var(--ok)}
-.alert.warning .ic{background:rgba(255,153,67,.15);color:var(--accent)}
+.alert.warning .ic{background:rgba(255, 165, 0,.15);color:var(--accent)}
 .alert.danger .ic{background:rgba(255,107,107,.15);color:var(--err)}
 .txt{flex:1;min-width:0}
 .txt b{display:block;font-size:.94rem;margin-bottom:2px}
@@ -99,7 +99,7 @@ document.getElementById('reset').addEventListener('click', function () { stack.i
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Toast — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -119,7 +119,7 @@ a{color:inherit;text-decoration:none}
 .toast.out{animation:tout .3s ease forwards}
 @keyframes tin{from{opacity:0;transform:translateX(44px)}to{opacity:1;transform:none}}
 @keyframes tout{to{opacity:0;transform:translateX(44px)}}
-.ic{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;font-weight:800;font-size:.9rem;flex:0 0 auto;background:rgba(255,153,67,.15);color:var(--accent)}
+.ic{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;font-weight:800;font-size:.9rem;flex:0 0 auto;background:rgba(255, 165, 0,.15);color:var(--accent)}
 .toast.ok .ic{background:rgba(62,207,142,.15);color:var(--ok)}
 .toast.err .ic{background:rgba(255,107,107,.15);color:var(--err)}
 .toast b{display:block;font-size:.88rem}
@@ -181,7 +181,7 @@ document.querySelectorAll('.row .btn').forEach(function (b) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Badges — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -194,7 +194,7 @@ a{color:inherit;text-decoration:none}
 .row{display:flex;flex-wrap:wrap;gap:9px;align-items:center}
 .b{display:inline-flex;align-items:center;gap:6px;font-size:.76rem;font-weight:800;padding:6px 12px;border-radius:999px;letter-spacing:.03em;transition:.2s}
 .b:hover{transform:translateY(-2px)}
-.b.new{background:rgba(255,153,67,.16);color:var(--accent);border:1px solid rgba(255,153,67,.4)}
+.b.new{background:rgba(255, 165, 0,.16);color:var(--accent);border:1px solid rgba(255, 165, 0,.4)}
 .b.sale{background:var(--brand);color:#fff;box-shadow:0 8px 18px rgba(255,92,92,.3)}
 .b.online{background:rgba(62,207,142,.14);color:var(--ok);border:1px solid rgba(62,207,142,.4)}
 .b.online::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px rgba(62,207,142,.22)}
@@ -253,7 +253,7 @@ a{color:inherit;text-decoration:none}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tooltip — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -305,7 +305,7 @@ a{color:inherit;text-decoration:none}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Popover — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -323,7 +323,7 @@ a{color:inherit;text-decoration:none}
 .pop p{font-size:.87rem;color:var(--muted);margin-bottom:14px}
 .opts{display:grid;gap:8px;margin-bottom:16px}
 .opt{display:flex;gap:10px;align-items:center;font-size:.86rem;background:rgba(0,0,0,.22);border:1px solid var(--line);border-radius:11px;padding:10px 12px;cursor:pointer;transition:.2s}
-.opt:hover{border-color:rgba(255,153,67,.5)}
+.opt:hover{border-color:rgba(255, 165, 0,.5)}
 .opt input{accent-color:var(--accent)}
 .acts{display:flex;gap:9px;justify-content:flex-end}
 .acts button{border:0;cursor:pointer;border-radius:10px;padding:10px 16px;font-weight:700;font-size:.85rem;transition:.2s}
@@ -391,7 +391,7 @@ document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setO
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Notification Bell — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -414,7 +414,7 @@ a{color:inherit;text-decoration:none}
 .nlist{padding:8px;display:grid;gap:4px}
 .n{display:flex;gap:11px;padding:11px 12px;border-radius:12px;position:relative;transition:.2s}
 .n:hover{background:rgba(255,255,255,.05)}
-.n.unread{background:rgba(255,153,67,.09)}
+.n.unread{background:rgba(255, 165, 0,.09)}
 .dot{position:absolute;top:14px;right:12px;width:8px;height:8px;border-radius:50%;background:var(--accent)}
 .n:not(.unread) .dot{display:none}
 .iava{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:.75rem;color:#14211f;flex:0 0 auto}
@@ -426,7 +426,7 @@ a{color:inherit;text-decoration:none}
 .ntxt small{display:block;color:var(--muted);font-size:.75rem;margin-top:2px}
 .dfoot{border-top:1px solid var(--line);padding:11px;text-align:center}
 .dfoot button{background:transparent;border:0;color:var(--accent);font-weight:700;font-size:.83rem;cursor:pointer;padding:7px 12px;border-radius:9px;transition:.2s}
-.dfoot button:hover{background:rgba(255,153,67,.13)}
+.dfoot button:hover{background:rgba(255, 165, 0,.13)}
 .hint{width:min(560px,100%);text-align:center;color:var(--muted);font-size:.85rem}
 .hint b{color:var(--accent)}
 </style>
@@ -485,13 +485,13 @@ document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setO
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Empty State — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
 a{color:inherit;text-decoration:none}
 .card{width:min(480px,100%);background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:46px 34px 40px;text-align:center;box-shadow:0 24px 60px rgba(0,0,0,.35)}
-.icon{width:94px;height:94px;margin:0 auto 22px;border-radius:26px;background:rgba(255,153,67,.09);border:1px dashed rgba(255,153,67,.5);display:grid;place-items:center;animation:float 4s ease-in-out infinite}
+.icon{width:94px;height:94px;margin:0 auto 22px;border-radius:26px;background:rgba(255, 165, 0,.09);border:1px dashed rgba(255, 165, 0,.5);display:grid;place-items:center;animation:float 4s ease-in-out infinite}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
 .icon svg{stroke:var(--accent)}
 .card h2{font-size:1.35rem;letter-spacing:-.02em;margin-bottom:8px}
@@ -533,14 +533,14 @@ a{color:inherit;text-decoration:none}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Error 404 — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
 a{color:inherit;text-decoration:none}
 .card{position:relative;width:min(540px,100%);background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:44px 34px 40px;text-align:center;box-shadow:0 24px 60px rgba(0,0,0,.4);overflow:hidden}
 .blob{position:absolute;width:230px;height:230px;border-radius:50%;filter:blur(70px);opacity:.3;pointer-events:none}
-.blob.a{top:-90px;right:-70px;background:rgba(255,153,67,.55)}
+.blob.a{top:-90px;right:-70px;background:rgba(255, 165, 0,.55)}
 .blob.b{bottom:-100px;left:-80px;background:rgba(255,92,92,.45)}
 .inner{position:relative;z-index:1}
 .code{font-size:clamp(4.6rem,17vw,7rem);font-weight:800;letter-spacing:-.05em;line-height:1;background:linear-gradient(135deg,var(--accent),var(--brand));-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -549,12 +549,12 @@ a{color:inherit;text-decoration:none}
 .search{display:flex;gap:9px;margin-top:26px}
 .search input{flex:1;min-width:0;background:rgba(0,0,0,.28);border:1px solid var(--line);border-radius:12px;padding:13px 15px;color:var(--text);outline:none;transition:.2s}
 .search input::placeholder{color:#6e8585}
-.search input:focus{border-color:var(--accent);box-shadow:0 0 0 4px rgba(255,153,67,.15)}
+.search input:focus{border-color:var(--accent);box-shadow:0 0 0 4px rgba(255, 165, 0,.15)}
 .search button{border:0;cursor:pointer;background:var(--accent);color:#14211f;font-weight:700;padding:13px 20px;border-radius:12px;transition:.2s}
 .search button:hover{filter:brightness(1.08)}
 .hint{margin-top:14px;font-size:.8rem;color:var(--muted);min-height:1.3em}
-.home{margin-top:18px;display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:.9rem;color:var(--accent);padding:10px 16px;border-radius:11px;border:1px solid rgba(255,153,67,.4);transition:.2s;background:transparent;cursor:pointer}
-.home:hover{background:rgba(255,153,67,.14);gap:11px}
+.home{margin-top:18px;display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:.9rem;color:var(--accent);padding:10px 16px;border-radius:11px;border:1px solid rgba(255, 165, 0,.4);transition:.2s;background:transparent;cursor:pointer}
+.home:hover{background:rgba(255, 165, 0,.14);gap:11px}
 </style>
 </head>
 <body>

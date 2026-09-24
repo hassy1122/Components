@@ -17,14 +17,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Profile Card — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
 a{color:inherit;text-decoration:none}
 .stage{display:flex;flex-direction:column;align-items:center;gap:16px;width:min(440px,100%)}
 .card{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.4);transition:.3s}
-.card:hover{transform:translateY(-4px);border-color:rgba(255,153,67,.35)}
+.card:hover{transform:translateY(-4px);border-color:rgba(255, 165, 0,.35)}
 .cover{height:104px;background:linear-gradient(135deg,var(--accent),var(--brand) 55%,#7c5cff);position:relative}
 .cover .tag{position:absolute;top:14px;right:14px;background:rgba(0,0,0,.32);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px}
 .who{padding:0 26px 26px;text-align:center}
@@ -90,16 +90,16 @@ follow.addEventListener('click', function () {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Product Card — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
 a{color:inherit;text-decoration:none}
 .stage{display:flex;flex-direction:column;align-items:center;gap:16px;width:min(360px,100%)}
 .card{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.4);transition:.3s}
-.card:hover{transform:translateY(-4px);border-color:rgba(255,153,67,.4)}
+.card:hover{transform:translateY(-4px);border-color:rgba(255, 165, 0,.4)}
 .thumb{position:relative;aspect-ratio:4/3;background:linear-gradient(150deg,#1d3b39,#2b4f4c 55%,#3a2a1a);display:grid;place-items:center;overflow:hidden}
-.thumb::after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(255,153,67,.35),transparent 65%)}
+.thumb::after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(255, 165, 0,.35),transparent 65%)}
 .art{font-size:4.2rem;position:relative;z-index:1;filter:drop-shadow(0 14px 22px rgba(0,0,0,.45));transition:.35s}
 .card:hover .art{transform:scale(1.08) rotate(-4deg)}
 .chip{position:absolute;z-index:2;font-size:.7rem;font-weight:800;letter-spacing:.05em;padding:5px 10px;border-radius:999px}
@@ -168,7 +168,7 @@ add.addEventListener('click', function () {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pricing Card — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -176,7 +176,7 @@ a{color:inherit;text-decoration:none}
 .grid{width:min(680px,100%);display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
 .plan{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:28px 24px 26px;position:relative;box-shadow:0 20px 50px rgba(0,0,0,.3);transition:.3s}
 .plan:hover{transform:translateY(-4px)}
-.plan.pop{border-color:rgba(255,153,67,.55);background:linear-gradient(180deg,rgba(255,153,67,.1),var(--panel) 45%);box-shadow:0 28px 64px rgba(0,0,0,.45)}
+.plan.pop{border-color:rgba(255, 165, 0,.55);background:linear-gradient(180deg,rgba(255, 165, 0,.1),var(--panel) 45%);box-shadow:0 28px 64px rgba(0,0,0,.45)}
 .ribbon{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--accent);color:#14211f;font-size:.66rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:6px 14px;border-radius:999px;white-space:nowrap}
 .tier{font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
 .plan.pop .tier{color:var(--accent)}
@@ -243,16 +243,16 @@ a{color:inherit;text-decoration:none}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Blog Card — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
 a{color:inherit;text-decoration:none}
 .stage{display:flex;flex-direction:column;align-items:center;width:min(440px,100%)}
 .card{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.4);transition:.3s}
-.card:hover{transform:translateY(-5px);border-color:rgba(255,153,67,.35)}
+.card:hover{transform:translateY(-5px);border-color:rgba(255, 165, 0,.35)}
 .cover{height:168px;background:linear-gradient(135deg,#22423f,#3a2c16 70%);position:relative;display:flex;align-items:flex-end;padding:16px;overflow:hidden}
-.cover::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(255,153,67,.4),transparent 50%),radial-gradient(circle at 15% 85%,rgba(255,92,92,.3),transparent 45%)}
+.cover::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(255, 165, 0,.4),transparent 50%),radial-gradient(circle at 15% 85%,rgba(255,92,92,.3),transparent 45%)}
 .cover::after{content:"✦";position:absolute;top:18px;right:26px;font-size:2rem;color:rgba(255,255,255,.35)}
 .tag{position:relative;z-index:1;background:rgba(15,31,30,.78);border:1px solid rgba(255,255,255,.16);color:var(--accent);font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
 .body{padding:20px 22px 22px}
@@ -260,8 +260,8 @@ a{color:inherit;text-decoration:none}
 .meta .dot{width:4px;height:4px;border-radius:50%;background:#4d6565}
 .body h2{font-size:1.2rem;letter-spacing:-.02em;line-height:1.32;margin-bottom:8px}
 .body p{color:var(--muted);font-size:.9rem;margin-bottom:16px}
-.more{display:inline-flex;align-items:center;gap:8px;color:var(--accent);font-weight:700;font-size:.88rem;padding:9px 15px;border-radius:11px;border:1px solid rgba(255,153,67,.35);transition:.2s}
-.more:hover{background:rgba(255,153,67,.14);gap:12px}
+.more{display:inline-flex;align-items:center;gap:8px;color:var(--accent);font-weight:700;font-size:.88rem;padding:9px 15px;border-radius:11px;border:1px solid rgba(255, 165, 0,.35);transition:.2s}
+.more:hover{background:rgba(255, 165, 0,.14);gap:12px}
 .hint{margin-top:16px;color:var(--muted);font-size:.85rem;text-align:center}
 .hint b{color:var(--accent)}
 </style>
@@ -293,7 +293,7 @@ a{color:inherit;text-decoration:none}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Stats Card — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -307,11 +307,11 @@ a{color:inherit;text-decoration:none}
 .value{font-size:2.2rem;font-weight:800;letter-spacing:-.03em}
 .sub{font-size:.83rem;color:var(--muted);margin-top:2px}
 .spark{display:flex;align-items:flex-end;gap:5px;height:66px;margin-top:18px}
-.spark span{flex:1;border-radius:4px 4px 2px 2px;background:linear-gradient(180deg,rgba(255,153,67,.85),rgba(255,153,67,.22));transition:.25s}
-.spark span:hover{background:linear-gradient(180deg,var(--accent),rgba(255,153,67,.55));transform:scaleY(1.05);transform-origin:bottom}
+.spark span{flex:1;border-radius:4px 4px 2px 2px;background:linear-gradient(180deg,rgba(255, 165, 0,.85),rgba(255, 165, 0,.22));transition:.25s}
+.spark span:hover{background:linear-gradient(180deg,var(--accent),rgba(255, 165, 0,.55));transform:scaleY(1.05);transform-origin:bottom}
 .minis{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .mini{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:0 18px 44px rgba(0,0,0,.3);transition:.25s}
-.mini:hover{border-color:rgba(255,153,67,.4);transform:translateY(-3px)}
+.mini:hover{border-color:rgba(255, 165, 0,.4);transform:translateY(-3px)}
 .mini .label{display:block;margin-bottom:6px}
 .mini b{font-size:1.45rem;letter-spacing:-.02em}
 .mini .sub{margin-top:6px}
@@ -347,14 +347,14 @@ a{color:inherit;text-decoration:none}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Testimonial Card — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
 a{color:inherit;text-decoration:none}
 .card{width:min(520px,100%);background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:18px;padding:28px 30px 24px;position:relative;box-shadow:0 24px 60px rgba(0,0,0,.35);transition:.3s}
 .card:hover{transform:translateY(-4px);box-shadow:0 30px 66px rgba(0,0,0,.45)}
-.mark{position:absolute;top:12px;right:24px;font-size:4.5rem;line-height:1;font-weight:800;color:rgba(255,153,67,.16);pointer-events:none}
+.mark{position:absolute;top:12px;right:24px;font-size:4.5rem;line-height:1;font-weight:800;color:rgba(255, 165, 0,.16);pointer-events:none}
 .stars{color:var(--accent);letter-spacing:3px;font-size:.95rem;margin-bottom:14px}
 .card blockquote{font-size:1.02rem;line-height:1.68;position:relative;z-index:1}
 .who{display:flex;align-items:center;gap:13px;margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
@@ -390,7 +390,7 @@ a{color:inherit;text-decoration:none}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Team Card — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -398,7 +398,7 @@ a{color:inherit;text-decoration:none}
 .stage{display:flex;flex-direction:column;align-items:center;gap:16px;width:min(660px,100%)}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;width:100%}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:28px 22px 24px;text-align:center;transition:.3s;overflow:hidden}
-.card:hover,.card:focus-within{border-color:rgba(255,153,67,.45);transform:translateY(-5px);box-shadow:0 24px 54px rgba(0,0,0,.4)}
+.card:hover,.card:focus-within{border-color:rgba(255, 165, 0,.45);transform:translateY(-5px);box-shadow:0 24px 54px rgba(0,0,0,.4)}
 .ava{width:84px;height:84px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:1.6rem;color:#14211f}
 .ava.a{background:linear-gradient(135deg,var(--accent),var(--brand))}
 .ava.b{background:linear-gradient(135deg,#3ecf8e,#4da3ff)}
@@ -457,14 +457,14 @@ a{color:inherit;text-decoration:none}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Flip Card — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
 a{color:inherit;text-decoration:none}
 .stage{display:flex;flex-direction:column;align-items:center;gap:18px}
 .flip{width:min(330px,100%);height:400px;perspective:1200px;cursor:pointer;outline:none;border-radius:18px}
-.flip:focus-visible{box-shadow:0 0 0 3px rgba(255,153,67,.7)}
+.flip:focus-visible{box-shadow:0 0 0 3px rgba(255, 165, 0,.7)}
 .inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.22,1,.36,1)}
 .flip:hover .inner,.flip:focus .inner,.flip.flipped .inner{transform:rotateY(180deg)}
 .face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:18px;border:1px solid var(--line);padding:30px 26px;box-shadow:0 24px 60px rgba(0,0,0,.45);display:flex;flex-direction:column}
@@ -472,7 +472,7 @@ a{color:inherit;text-decoration:none}
 .front .emoji{font-size:3.6rem;filter:drop-shadow(0 12px 20px rgba(0,0,0,.4))}
 .front h3{font-size:1.3rem;letter-spacing:-.02em;margin-top:8px}
 .front p{color:var(--muted);font-size:.88rem;max-width:24ch}
-.front .tip{margin-top:18px;font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);border:1px dashed rgba(255,153,67,.45);padding:8px 14px;border-radius:999px}
+.front .tip{margin-top:18px;font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);border:1px dashed rgba(255, 165, 0,.45);padding:8px 14px;border-radius:999px}
 .back{background:linear-gradient(150deg,#2a1c10,var(--panel));transform:rotateY(180deg);justify-content:center}
 .back .kicker{font-size:.66rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
 .back h3{font-size:1.25rem;margin:8px 0 10px}
@@ -533,7 +533,7 @@ flip.addEventListener('click', function (e) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Feature Card — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -544,8 +544,8 @@ a{color:inherit;text-decoration:none}
 .head p{color:var(--muted);font-size:.9rem;margin-top:6px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .f{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px 20px;transition:.25s}
-.f:hover{transform:translateY(-5px);border-color:rgba(255,153,67,.45);box-shadow:0 20px 44px rgba(0,0,0,.4)}
-.ic{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;font-size:1.3rem;background:rgba(255,153,67,.14);border:1px solid rgba(255,153,67,.32);margin-bottom:14px;transition:.25s}
+.f:hover{transform:translateY(-5px);border-color:rgba(255, 165, 0,.45);box-shadow:0 20px 44px rgba(0,0,0,.4)}
+.ic{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;font-size:1.3rem;background:rgba(255, 165, 0,.14);border:1px solid rgba(255, 165, 0,.32);margin-bottom:14px;transition:.25s}
 .f:hover .ic{background:var(--accent);transform:rotate(-6deg) scale(1.05)}
 .f h3{font-size:1rem;margin-bottom:6px;letter-spacing:-.01em}
 .f p{font-size:.86rem;color:var(--muted)}
@@ -581,16 +581,16 @@ a{color:inherit;text-decoration:none}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Media Card — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
 a{color:inherit;text-decoration:none}
 .stage{display:flex;flex-direction:column;align-items:center;gap:16px;width:min(400px,100%)}
 .card{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.4);transition:.3s}
-.card:hover{transform:translateY(-4px);border-color:rgba(255,153,67,.35)}
+.card:hover{transform:translateY(-4px);border-color:rgba(255, 165, 0,.35)}
 .thumb{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#2a1f3d,#16302f 45%,#3a2412);display:grid;place-items:center;overflow:hidden}
-.thumb::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,rgba(124,92,255,.42),transparent 55%),radial-gradient(circle at 75% 70%,rgba(255,153,67,.38),transparent 50%)}
+.thumb::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,rgba(124,92,255,.42),transparent 55%),radial-gradient(circle at 75% 70%,rgba(255, 165, 0,.38),transparent 50%)}
 .new{position:absolute;top:12px;left:12px;background:var(--brand);color:#fff;font-size:.64rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:5px 10px;border-radius:999px;z-index:2}
 .dur{position:absolute;bottom:12px;right:12px;background:rgba(0,0,0,.78);font-size:.72rem;font-weight:700;padding:4px 9px;border-radius:8px;letter-spacing:.05em;z-index:2}
 .play{position:relative;z-index:2;width:64px;height:64px;border-radius:50%;border:0;background:rgba(255,255,255,.16);backdrop-filter:blur(8px);color:#fff;font-size:1.3rem;display:grid;place-items:center;cursor:pointer;padding-left:5px;transition:.25s;box-shadow:0 14px 32px rgba(0,0,0,.45)}
@@ -646,7 +646,7 @@ play.addEventListener('click', function () {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Notification Card — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -654,7 +654,7 @@ a{color:inherit;text-decoration:none}
 .wrap{width:min(460px,100%);background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.4)}
 .head{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid var(--line)}
 .head b{font-size:.98rem}
-.head span{font-size:.74rem;font-weight:800;color:var(--accent);background:rgba(255,153,67,.14);padding:5px 11px;border-radius:999px}
+.head span{font-size:.74rem;font-weight:800;color:var(--accent);background:rgba(255, 165, 0,.14);padding:5px 11px;border-radius:999px}
 .list{padding:10px;display:grid;gap:6px}
 .n{display:flex;gap:13px;padding:14px 16px;border-radius:14px;position:relative;transition:.2s}
 .n.unread{background:var(--panel-2)}
@@ -667,11 +667,11 @@ a{color:inherit;text-decoration:none}
 .txt b{font-weight:700}
 .txt small{display:block;color:var(--muted);font-size:.78rem;margin-top:3px}
 .time{font-size:.72rem;color:var(--muted);flex:0 0 auto;padding-top:2px}
-.dot{position:absolute;top:15px;right:14px;width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(255,153,67,.16)}
+.dot{position:absolute;top:15px;right:14px;width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(255, 165, 0,.16)}
 .n:not(.unread) .dot{display:none}
 .foot{padding:14px 20px;border-top:1px solid var(--line);text-align:center}
 .foot a{font-size:.84rem;font-weight:700;color:var(--accent);padding:7px 14px;border-radius:9px;transition:.2s}
-.foot a:hover{background:rgba(255,153,67,.13)}
+.foot a:hover{background:rgba(255, 165, 0,.13)}
 </style>
 </head>
 <body>
@@ -707,16 +707,16 @@ a{color:inherit;text-decoration:none}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hover Actions Card — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
 a{color:inherit;text-decoration:none}
 .stage{display:flex;flex-direction:column;align-items:center;gap:16px;width:min(420px,100%)}
 .card{position:relative;width:100%;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,.4);cursor:pointer;transition:.3s;background:var(--panel)}
-.card:hover{transform:translateY(-4px);border-color:rgba(255,153,67,.4)}
+.card:hover{transform:translateY(-4px);border-color:rgba(255, 165, 0,.4)}
 .art{height:270px;background:linear-gradient(140deg,#16302f,#3a2a12 55%,#4a1f1f);position:relative;display:flex;align-items:flex-end;padding:22px}
-.art::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 25%,rgba(255,153,67,.42),transparent 55%),radial-gradient(circle at 20% 80%,rgba(124,92,255,.3),transparent 50%)}
+.art::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 25%,rgba(255, 165, 0,.42),transparent 55%),radial-gradient(circle at 20% 80%,rgba(124,92,255,.3),transparent 50%)}
 .caption{position:relative;z-index:1}
 .caption b{display:block;font-size:1.18rem;letter-spacing:-.01em}
 .caption span{font-size:.82rem;color:rgba(238,244,244,.75)}

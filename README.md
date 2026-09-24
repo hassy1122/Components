@@ -62,7 +62,7 @@ Shared by every component (`:root` in each document):
 | `--panel-2` | `#1d3b39` | Raised surface |
 | `--line` | `rgba(255,255,255,.1)` | Borders |
 | `--text` / `--muted` | `#eef4f4` / `#a2b5b5` | Text |
-| `--accent` | `#ff9f43` | Primary accent |
+| `--accent` | `#ffa500` | Primary accent |
 | `--brand` | `#ff5c5c` | Secondary accent |
 | `--ok` / `--err` | `#3ecf8e` / `#ff6b6b` | Success / error |
 

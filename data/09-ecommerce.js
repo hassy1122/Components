@@ -17,7 +17,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cart Drawer — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -34,10 +34,10 @@ a{color:inherit;text-decoration:none}
 .sub b{color:var(--accent)}
 .list{display:grid;gap:12px;margin-top:22px}
 .prow{display:flex;gap:14px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 14px;transition:.2s}
-.prow:hover{border-color:rgba(255,153,67,.35);background:var(--panel-2)}
+.prow:hover{border-color:rgba(255, 165, 0,.35);background:var(--panel-2)}
 .th{width:60px;height:60px;border-radius:11px;flex:0 0 auto;position:relative;overflow:hidden}
 .th::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.3),transparent 55%)}
-.t1{background:linear-gradient(135deg,#ff9f43,#ff5c5c)}
+.t1{background:linear-gradient(135deg,#ffa500,#ff5c5c)}
 .t2{background:linear-gradient(135deg,#1d3b39,#3ecf8e)}
 .t3{background:linear-gradient(135deg,#3b1515,#ffd9ad)}
 .info{flex:1}
@@ -62,7 +62,7 @@ a{color:inherit;text-decoration:none}
 .drow{display:flex;align-items:center;justify-content:space-between;margin-top:8px}
 .step{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:rgba(0,0,0,.25)}
 .step button{width:28px;height:28px;background:transparent;border:0;color:var(--muted);cursor:pointer;transition:.15s}
-.step button:hover{background:rgba(255,153,67,.18);color:var(--accent)}
+.step button:hover{background:rgba(255, 165, 0,.18);color:var(--accent)}
 .step .q{width:30px;text-align:center;font-size:.85rem;font-weight:700}
 .lt{font-size:.88rem;font-weight:800;color:var(--accent)}
 .dfoot{border-top:1px solid var(--line);padding:16px 20px 20px;display:grid;gap:8px;background:rgba(0,0,0,.18)}
@@ -185,7 +185,7 @@ recalc();
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Product Grid — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -196,13 +196,13 @@ a{color:inherit;text-decoration:none}
 .chips{display:flex;gap:8px;flex-wrap:wrap}
 .chip{background:rgba(0,0,0,.25);border:1px solid var(--line);color:var(--muted);font-size:.82rem;font-weight:700;padding:8px 15px;border-radius:999px;cursor:pointer;transition:.2s}
 .chip:hover{color:var(--text);border-color:var(--muted)}
-.chip.on{background:rgba(255,153,67,.15);border-color:rgba(255,153,67,.45);color:var(--accent)}
+.chip.on{background:rgba(255, 165, 0,.15);border-color:rgba(255, 165, 0,.45);color:var(--accent)}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:16px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.25s;display:flex;flex-direction:column}
-.card:hover{transform:translateY(-5px);border-color:rgba(255,153,67,.4);box-shadow:0 20px 44px rgba(0,0,0,.38)}
+.card:hover{transform:translateY(-5px);border-color:rgba(255, 165, 0,.4);box-shadow:0 20px 44px rgba(0,0,0,.38)}
 .thumb{position:relative;aspect-ratio:4/3;overflow:hidden}
 .emo{position:absolute;inset:0;display:grid;place-items:center;font-size:3rem;filter:drop-shadow(0 10px 20px rgba(0,0,0,.45))}
-.p1{background:linear-gradient(135deg,#ff9f43,#ff5c5c)}
+.p1{background:linear-gradient(135deg,#ffa500,#ff5c5c)}
 .p2{background:linear-gradient(135deg,#1d3b39,#3ecf8e)}
 .p3{background:linear-gradient(135deg,#3b1515,#ffd9ad)}
 .p4{background:linear-gradient(135deg,#0f1f1e,#2f6f6b)}
@@ -293,7 +293,7 @@ Array.prototype.slice.call(document.querySelectorAll('.fav')).forEach(function (
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Price Tag — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -305,7 +305,7 @@ a{color:inherit;text-decoration:none}
 .head p{color:var(--muted);font-size:.92rem;margin-top:6px}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .v{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px;transition:.2s}
-.v:hover{border-color:rgba(255,153,67,.35);background:var(--panel-2)}
+.v:hover{border-color:rgba(255, 165, 0,.35);background:var(--panel-2)}
 .lab{display:block;font-size:.68rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
 .row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
 .now{font-weight:800;font-size:1.6rem;letter-spacing:-.02em;color:var(--accent)}
@@ -316,7 +316,7 @@ a{color:inherit;text-decoration:none}
 .curs{display:flex;flex-wrap:wrap;gap:8px}
 .cur{background:rgba(0,0,0,.25);border:1px solid var(--line);border-radius:10px;padding:9px 13px;font-weight:700;font-size:.9rem;transition:.2s}
 .cur:hover{border-color:var(--accent);color:var(--accent)}
-.pill{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(120deg,rgba(255,153,67,.2),rgba(255,92,92,.16));border:1px solid rgba(255,153,67,.35);border-radius:999px;padding:10px 18px;font-weight:800}
+.pill{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(120deg,rgba(255, 165, 0,.2),rgba(255,92,92,.16));border:1px solid rgba(255, 165, 0,.35);border-radius:999px;padding:10px 18px;font-weight:800}
 .pill s{color:var(--muted);font-weight:600;font-size:.88rem}
 .free{font-size:1.7rem;font-weight:800;color:var(--ok);letter-spacing:-.02em}
 .note{font-size:.82rem;color:var(--muted);margin-top:6px}
@@ -353,7 +353,7 @@ a{color:inherit;text-decoration:none}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Quantity Stepper — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -367,7 +367,7 @@ a{color:inherit;text-decoration:none}
 .lab{display:block;font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:10px}
 .stepper{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:14px;background:rgba(0,0,0,.25);overflow:hidden}
 .sbtn{width:48px;height:48px;background:transparent;border:0;color:var(--text);font-size:1.25rem;cursor:pointer;transition:.18s}
-.sbtn:hover:not(:disabled){background:rgba(255,153,67,.16);color:var(--accent)}
+.sbtn:hover:not(:disabled){background:rgba(255, 165, 0,.16);color:var(--accent)}
 .sbtn:disabled{opacity:.3;cursor:not-allowed}
 .val{width:58px;height:48px;display:grid;place-items:center;font-weight:800;font-size:1.05rem;border-left:1px solid var(--line);border-right:1px solid var(--line)}
 .limits{display:flex;gap:14px;margin-top:14px;font-size:.8rem;color:var(--muted)}
@@ -427,7 +427,7 @@ sync();
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Star Rating — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -518,7 +518,7 @@ document.getElementById('stars').addEventListener('mouseleave', function () { pa
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Order Summary — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -526,12 +526,12 @@ a{color:inherit;text-decoration:none}
 .card{width:min(520px,100%);background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:0 24px 60px rgba(0,0,0,.35)}
 .top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
 .top h2{font-size:1.15rem;letter-spacing:-.01em}
-.step{font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);background:rgba(255,153,67,.13);border:1px solid rgba(255,153,67,.3);padding:5px 11px;border-radius:999px}
+.step{font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);background:rgba(255, 165, 0,.13);border:1px solid rgba(255, 165, 0,.3);padding:5px 11px;border-radius:999px}
 .items{display:grid;gap:12px}
 .item{display:flex;gap:12px;align-items:center}
 .th{width:48px;height:48px;border-radius:10px;flex:0 0 auto;position:relative;overflow:hidden}
 .th::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.3),transparent 55%)}
-.t1{background:linear-gradient(135deg,#ff9f43,#ff5c5c)}
+.t1{background:linear-gradient(135deg,#ffa500,#ff5c5c)}
 .t2{background:linear-gradient(135deg,#1d3b39,#3ecf8e)}
 .t3{background:linear-gradient(135deg,#3b1515,#ffd9ad)}
 .item .m{flex:1;min-width:0}
@@ -584,7 +584,7 @@ a{color:inherit;text-decoration:none}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Coupon Field — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -595,7 +595,7 @@ h3{font-size:1.05rem;margin-bottom:6px}
 .form{display:flex;gap:8px}
 .form input{flex:1;min-width:0;background:rgba(0,0,0,.25);border:1px solid var(--line);border-radius:12px;padding:13px 15px;color:var(--text);outline:none;transition:.2s;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
 .form input::placeholder{color:#6d8484;letter-spacing:.04em;text-transform:none;font-weight:500}
-.form input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(255,153,67,.18)}
+.form input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(255, 165, 0,.18)}
 .form input.good{border-color:var(--ok)}
 .form input.bad{border-color:var(--err)}
 .apply{border:0;background:var(--accent);color:#14211f;font-weight:800;padding:0 22px;border-radius:12px;cursor:pointer;transition:.2s}
@@ -665,14 +665,14 @@ form.addEventListener('submit', function (e) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Add-to-Cart Bar — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
 a{color:inherit;text-decoration:none}
 .page{max-width:860px;margin:0 auto;padding:36px 24px 150px}
 .hero{display:flex;gap:24px;align-items:flex-start}
-.ph{width:210px;height:210px;flex:0 0 auto;border-radius:16px;background:linear-gradient(135deg,#ff9f43,#ff5c5c);position:relative;overflow:hidden;border:1px solid var(--line)}
+.ph{width:210px;height:210px;flex:0 0 auto;border-radius:16px;background:linear-gradient(135deg,#ffa500,#ff5c5c);position:relative;overflow:hidden;border:1px solid var(--line)}
 .ph::after{content:"🎧";position:absolute;inset:0;display:grid;place-items:center;font-size:4rem;filter:drop-shadow(0 12px 24px rgba(0,0,0,.45))}
 .cat{font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
 h1{font-size:clamp(1.5rem,3vw,2rem);letter-spacing:-.02em;margin:8px 0}
@@ -690,7 +690,7 @@ h1{font-size:clamp(1.5rem,3vw,2rem);letter-spacing:-.02em;margin:8px 0}
 .ul{list-style:none;display:grid;gap:9px;color:var(--muted);font-size:.92rem;margin-top:6px}
 .ul li::before{content:"✓";color:var(--ok);font-weight:800;margin-right:10px}
 .bar{position:fixed;left:50%;transform:translateX(-50%);bottom:14px;width:min(720px,calc(100% - 24px));display:flex;align-items:center;gap:14px;background:rgba(22,48,47,.94);backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:18px;padding:12px 14px;box-shadow:0 18px 50px rgba(0,0,0,.55);z-index:50}
-.mini{width:46px;height:46px;border-radius:11px;flex:0 0 auto;background:linear-gradient(135deg,#ff9f43,#ff5c5c);position:relative;overflow:hidden}
+.mini{width:46px;height:46px;border-radius:11px;flex:0 0 auto;background:linear-gradient(135deg,#ffa500,#ff5c5c);position:relative;overflow:hidden}
 .mini::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.35),transparent 55%)}
 .binfo{flex:1;min-width:0}
 .binfo b{display:block;font-size:.92rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}

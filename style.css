@@ -10,9 +10,10 @@
   --surface-2: #ffffff;
   --border: rgba(255, 255, 255, 0.09);
   --border-light: #d7dcdc;
-  --link-color: #ff5c5c;
+  --link-color: #ff8a00;
   --link-color-active: #ffffff;
   --accent-orange: orange;
+  --accent-strong: #ff8a00;
   --accent-contrast: #102426;
   --text: #ffffff;
   --text-2: #dbe4e4;
@@ -114,7 +115,7 @@ code {
 .hero {
   background:
     radial-gradient(1000px 420px at 15% -10%, rgba(255, 165, 0, 0.14), transparent 60%),
-    radial-gradient(800px 400px at 90% 10%, rgba(255, 92, 92, 0.1), transparent 60%),
+    radial-gradient(800px 400px at 90% 10%, rgba(255, 138, 0, 0.12), transparent 60%),
     var(--bg-darker);
   border-bottom: 1px solid var(--border);
   padding: clamp(48px, 9vw, 88px) clamp(20px, 5vw, 48px) clamp(40px, 7vw, 64px);
@@ -282,7 +283,7 @@ code {
   font-weight: 800;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--accent-strong);
   margin: 14px 10px 8px;
 }
 .toc-title:first-child { margin-top: 0; }
@@ -293,7 +294,7 @@ code {
 
 .toc a {
   display: block;
-  color: var(--text-2);
+  color: var(--accent-orange);
   text-decoration: none;
   font-size: 0.88rem;
   padding: 6px 10px;
@@ -303,12 +304,12 @@ code {
 }
 .toc a:hover {
   background: rgba(255, 255, 255, 0.06);
-  color: var(--link-color-active);
+  color: #ffb13d;
   padding-left: 13px;
 }
 .toc a.active {
-  color: var(--accent-orange);
-  border-left-color: var(--accent-orange);
+  color: var(--accent-strong);
+  border-left-color: var(--accent-strong);
   background: rgba(255, 165, 0, 0.1);
   font-weight: 700;
 }
@@ -341,7 +342,7 @@ code {
   width: 56px;
   height: 3.5px;
   border-radius: 3px;
-  background: linear-gradient(90deg, var(--accent-orange), rgba(255, 92, 92, 0.7));
+  background: linear-gradient(90deg, var(--accent-orange), rgba(255, 138, 0, 0.85));
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.7s cubic-bezier(.22, 1, .36, 1) 0.25s;
@@ -427,7 +428,7 @@ code {
   width: 100%;
   height: 3px;
   border-radius: 3px;
-  background: linear-gradient(90deg, var(--accent-orange), rgba(255, 92, 92, 0.55));
+  background: linear-gradient(90deg, var(--accent-orange), rgba(255, 138, 0, 0.7));
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.6s cubic-bezier(.22, 1, .36, 1) 0.2s;
@@ -690,7 +691,7 @@ code {
     padding: 8px 12px;
   }
   .toc a:hover { padding-left: 12px; }
-  .toc a.active { border-left: 0; box-shadow: inset 3px 0 0 var(--accent-orange); }
+  .toc a.active { border-left: 0; box-shadow: inset 3px 0 0 var(--accent-strong); }
 
   .comp-grid { grid-template-columns: 1fr; }
 }

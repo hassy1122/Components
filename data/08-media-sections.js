@@ -17,22 +17,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hero Section — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
 a{color:inherit;text-decoration:none}
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:90px 24px;overflow:hidden;background:radial-gradient(900px 480px at 50% -12%,rgba(255,153,67,.16),transparent 60%),radial-gradient(760px 430px at 85% 112%,rgba(255,92,92,.12),transparent 62%)}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:90px 24px;overflow:hidden;background:radial-gradient(900px 480px at 50% -12%,rgba(255, 165, 0,.16),transparent 60%),radial-gradient(760px 430px at 85% 112%,rgba(255,92,92,.12),transparent 62%)}
 .hero::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.055) 1px,transparent 1px);background-size:26px 26px;-webkit-mask-image:radial-gradient(580px 400px at 50% 42%,#000,transparent 74%);mask-image:radial-gradient(580px 400px at 50% 42%,#000,transparent 74%);pointer-events:none}
 .in{position:relative;z-index:1;max-width:820px;display:flex;flex-direction:column;align-items:center;gap:20px}
-.pill{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:700;color:var(--accent);background:rgba(255,153,67,.12);border:1px solid rgba(255,153,67,.35);padding:7px 15px;border-radius:999px}
+.pill{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:700;color:var(--accent);background:rgba(255, 165, 0,.12);border:1px solid rgba(255, 165, 0,.35);padding:7px 15px;border-radius:999px}
 .pill i{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px rgba(62,207,142,.18)}
 h1{font-size:clamp(2.1rem,6vw,3.9rem);line-height:1.08;letter-spacing:-.03em;font-weight:800}
 h1 .g{background:linear-gradient(95deg,#ffd9ad,var(--accent) 48%,var(--brand));-webkit-background-clip:text;background-clip:text;color:transparent}
 .lead{color:var(--muted);font-size:clamp(.98rem,2vw,1.12rem);max-width:56ch}
 .ctas{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:4px}
 .btn{border:0;cursor:pointer;font-weight:800;font-size:.95rem;padding:14px 26px;border-radius:12px;transition:.22s}
-.btn.primary{background:var(--accent);color:#14211f;box-shadow:0 12px 30px rgba(255,153,67,.32)}
+.btn.primary{background:var(--accent);color:#14211f;box-shadow:0 12px 30px rgba(255, 165, 0,.32)}
 .btn.primary:hover{transform:translateY(-2px);filter:brightness(1.07)}
 .btn.ghost{background:rgba(255,255,255,.05);color:var(--text);border:1px solid var(--line)}
 .btn.ghost:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
@@ -83,13 +83,13 @@ h1 .g{background:linear-gradient(95deg,#ffd9ad,var(--accent) 48%,var(--brand));-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CTA Banner — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
 a{color:inherit;text-decoration:none}
-.band{position:relative;width:min(900px,100%);border-radius:20px;padding:46px 32px;text-align:center;overflow:hidden;background:linear-gradient(135deg,var(--panel-2) 0%,#2b1c11 55%,#3b1515 100%);border:1px solid rgba(255,153,67,.32);box-shadow:0 30px 70px rgba(0,0,0,.45)}
-.band::before{content:"";position:absolute;top:-150px;right:-90px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(255,153,67,.38),transparent 68%)}
+.band{position:relative;width:min(900px,100%);border-radius:20px;padding:46px 32px;text-align:center;overflow:hidden;background:linear-gradient(135deg,var(--panel-2) 0%,#2b1c11 55%,#3b1515 100%);border:1px solid rgba(255, 165, 0,.32);box-shadow:0 30px 70px rgba(0,0,0,.45)}
+.band::before{content:"";position:absolute;top:-150px;right:-90px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(255, 165, 0,.38),transparent 68%)}
 .band::after{content:"";position:absolute;bottom:-160px;left:-100px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(255,92,92,.28),transparent 68%)}
 .in{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:16px}
 .kick{font-size:.72rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
@@ -98,7 +98,7 @@ a{color:inherit;text-decoration:none}
 .band p{color:var(--muted);font-size:.98rem;max-width:52ch}
 .ctas{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:6px}
 .btn{border:0;cursor:pointer;font-weight:800;font-size:.93rem;padding:13px 24px;border-radius:12px;transition:.22s}
-.btn.primary{background:var(--accent);color:#14211f;box-shadow:0 12px 28px rgba(255,153,67,.3)}
+.btn.primary{background:var(--accent);color:#14211f;box-shadow:0 12px 28px rgba(255, 165, 0,.3)}
 .btn.primary:hover{transform:translateY(-2px);filter:brightness(1.07)}
 .btn.ghost{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.22)}
 .btn.ghost:hover{border-color:var(--text);transform:translateY(-2px)}
@@ -133,7 +133,7 @@ a{color:inherit;text-decoration:none}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Feature Grid — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -145,8 +145,8 @@ a{color:inherit;text-decoration:none}
 .head p{color:var(--muted);margin-top:8px;font-size:.95rem}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px 22px;transition:.25s}
-.card:hover{transform:translateY(-5px);border-color:rgba(255,153,67,.4);box-shadow:0 18px 40px rgba(0,0,0,.35);background:var(--panel-2)}
-.ic{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;font-size:1.3rem;background:linear-gradient(135deg,rgba(255,153,67,.25),rgba(255,92,92,.18));border:1px solid rgba(255,153,67,.3);margin-bottom:14px}
+.card:hover{transform:translateY(-5px);border-color:rgba(255, 165, 0,.4);box-shadow:0 18px 40px rgba(0,0,0,.35);background:var(--panel-2)}
+.ic{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;font-size:1.3rem;background:linear-gradient(135deg,rgba(255, 165, 0,.25),rgba(255,92,92,.18));border:1px solid rgba(255, 165, 0,.3);margin-bottom:14px}
 .card h3{font-size:1rem;margin-bottom:6px}
 .card p{color:var(--muted);font-size:.88rem}
 .card a{display:inline-block;margin-top:12px;font-size:.85rem;font-weight:700;color:var(--accent);transition:.2s}
@@ -185,7 +185,7 @@ a{color:inherit;text-decoration:none}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Footer — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -282,7 +282,7 @@ form.addEventListener('submit', function (e) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Page Header — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -291,7 +291,7 @@ a{color:inherit;text-decoration:none}
 .crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:.87rem;list-style:none}
 .crumbs li{display:flex;align-items:center;gap:6px}
 .crumbs a{color:var(--muted);padding:4px 8px;border-radius:7px;transition:.18s}
-.crumbs a:hover{color:var(--accent);background:rgba(255,153,67,.12)}
+.crumbs a:hover{color:var(--accent);background:rgba(255, 165, 0,.12)}
 .crumbs .sep{color:#4d6565}
 .crumbs .cur{color:var(--text);font-weight:700;padding:4px 8px;background:rgba(255,255,255,.07);border-radius:7px}
 .row{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px;margin-top:16px}
@@ -299,7 +299,7 @@ h1{font-size:clamp(1.5rem,3vw,2rem);letter-spacing:-.02em;margin-bottom:8px}
 .sub{color:var(--muted);font-size:.94rem;max-width:58ch}
 .acts{display:flex;flex-wrap:wrap;gap:10px}
 .btn{border:0;cursor:pointer;font-weight:700;font-size:.9rem;padding:11px 18px;border-radius:11px;transition:.2s}
-.btn.primary{background:var(--accent);color:#14211f;box-shadow:0 10px 24px rgba(255,153,67,.28)}
+.btn.primary{background:var(--accent);color:#14211f;box-shadow:0 10px 24px rgba(255, 165, 0,.28)}
 .btn.primary:hover{transform:translateY(-2px);filter:brightness(1.07)}
 .btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
 .btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
@@ -352,7 +352,7 @@ h1{font-size:clamp(1.5rem,3vw,2rem);letter-spacing:-.02em;margin-bottom:8px}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gallery Grid — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -373,12 +373,12 @@ a{color:inherit;text-decoration:none}
 .tile:hover .cap,.tile:focus-visible .cap{transform:none;opacity:1}
 .cap b{display:block;font-size:.9rem}
 .cap span{font-size:.75rem;color:#c9d6d6}
-.g1{background:linear-gradient(135deg,#ff9f43,#ff5c5c)}
+.g1{background:linear-gradient(135deg,#ffa500,#ff5c5c)}
 .g2{background:linear-gradient(135deg,#1d3b39,#3ecf8e)}
-.g3{background:linear-gradient(140deg,#2a1f10,#ff9f43)}
+.g3{background:linear-gradient(140deg,#2a1f10,#ffa500)}
 .g4{background:linear-gradient(135deg,#3b1515,#ff8a8a)}
 .g5{background:linear-gradient(135deg,#16302f,#2f6f6b)}
-.g6{background:linear-gradient(135deg,#0f1f1e,#ff9f43)}
+.g6{background:linear-gradient(135deg,#0f1f1e,#ffa500)}
 .g7{background:linear-gradient(135deg,#53371b,#ffd9ad)}
 @media(max-width:760px){.grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:130px}}
 @media(hover:none){.cap{opacity:1;transform:none}}
@@ -415,22 +415,22 @@ a{color:inherit;text-decoration:none}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Carousel — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
 a{color:inherit;text-decoration:none}
 .car{width:min(800px,100%);background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.35);outline:none}
-.car:focus-visible{border-color:var(--accent);box-shadow:0 0 0 3px rgba(255,153,67,.3)}
+.car:focus-visible{border-color:var(--accent);box-shadow:0 0 0 3px rgba(255, 165, 0,.3)}
 .viewport{position:relative}
 .track{display:flex;transition:transform .55s cubic-bezier(.22,1,.36,1)}
 .slide{flex:0 0 100%;position:relative;height:330px}
 .art{position:absolute;inset:0}
 .art::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 24% 30%,rgba(255,255,255,.25),transparent 55%)}
-.s1{background:linear-gradient(135deg,#ff9f43,#ff5c5c)}
+.s1{background:linear-gradient(135deg,#ffa500,#ff5c5c)}
 .s2{background:linear-gradient(135deg,#1d3b39,#3ecf8e)}
 .s3{background:linear-gradient(140deg,#0f1f1e,#2f6f6b 70%,#7ce0c0)}
-.s4{background:linear-gradient(140deg,#3b1515,#ff9f43)}
+.s4{background:linear-gradient(140deg,#3b1515,#ffa500)}
 .txt{position:absolute;left:0;right:0;bottom:0;padding:56px 26px 22px;background:linear-gradient(transparent,rgba(0,0,0,.85));z-index:1}
 .tag{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.25);padding:4px 10px;border-radius:999px;margin-bottom:8px}
 .txt h3{font-size:1.25rem;letter-spacing:-.02em}
@@ -509,20 +509,20 @@ car.addEventListener('keydown', function (e) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Video Embed — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
 a{color:inherit;text-decoration:none}
 .stage{width:min(840px,100%)}
 .vid{position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;border:1px solid var(--line);cursor:pointer;background:linear-gradient(140deg,#1d3b39 0%,#2a1a10 55%,#3b1515 100%);box-shadow:0 26px 60px rgba(0,0,0,.45);transition:.3s}
-.vid::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 22% 28%,rgba(255,153,67,.35),transparent 48%),radial-gradient(circle at 80% 76%,rgba(255,92,92,.3),transparent 50%)}
-.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;width:78px;height:78px;border-radius:50%;border:0;background:var(--accent);color:#14211f;font-size:1.5rem;cursor:pointer;box-shadow:0 14px 40px rgba(255,153,67,.45);transition:.3s;display:grid;place-items:center}
+.vid::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 22% 28%,rgba(255, 165, 0,.35),transparent 48%),radial-gradient(circle at 80% 76%,rgba(255,92,92,.3),transparent 50%)}
+.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;width:78px;height:78px;border-radius:50%;border:0;background:var(--accent);color:#14211f;font-size:1.5rem;cursor:pointer;box-shadow:0 14px 40px rgba(255, 165, 0,.45);transition:.3s;display:grid;place-items:center}
 .play span{padding-left:5px}
 .play:hover{transform:translate(-50%,-50%) scale(1.09)}
 .play:focus-visible{outline:3px solid #fff;outline-offset:3px}
 .vid.playing .play{opacity:0;transform:translate(-50%,-50%) scale(.5);pointer-events:none}
-.ring{position:absolute;left:50%;top:50%;width:78px;height:78px;border-radius:50%;border:2px solid rgba(255,153,67,.7);transform:translate(-50%,-50%);opacity:0;z-index:1;pointer-events:none}
+.ring{position:absolute;left:50%;top:50%;width:78px;height:78px;border-radius:50%;border:2px solid rgba(255, 165, 0,.7);transform:translate(-50%,-50%);opacity:0;z-index:1;pointer-events:none}
 .vid.playing .ring{animation:pulse 1.6s ease-out infinite}
 @keyframes pulse{0%{opacity:.85;transform:translate(-50%,-50%) scale(1)}100%{opacity:0;transform:translate(-50%,-50%) scale(2.5)}}
 .chip{position:absolute;left:16px;bottom:16px;z-index:2;display:flex;align-items:center;gap:9px;background:rgba(0,0,0,.55);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:.82rem;font-weight:700;opacity:0;transform:translateY(8px);transition:.3s;pointer-events:none}

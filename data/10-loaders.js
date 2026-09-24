@@ -17,7 +17,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Spinners — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -29,17 +29,17 @@ h2{font-size:1.35rem;letter-spacing:-.02em;margin-top:7px}
 .sub{color:var(--muted);font-size:.9rem;margin-top:7px}
 .row{display:flex;justify-content:center;gap:22px;flex-wrap:wrap}
 .cell{display:flex;flex-direction:column;align-items:center;gap:16px;background:var(--panel-2);border:1px solid var(--line);border-radius:14px;padding:24px 26px;min-width:136px;transition:.25s}
-.cell:hover{border-color:rgba(255,153,67,.45);transform:translateY(-4px);box-shadow:0 16px 34px rgba(0,0,0,.35)}
+.cell:hover{border-color:rgba(255, 165, 0,.45);transform:translateY(-4px);box-shadow:0 16px 34px rgba(0,0,0,.35)}
 .cap{font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .ring{display:block;width:44px;height:44px;border-radius:50%;border:3.5px solid rgba(255,255,255,.1);border-top-color:var(--accent);border-right-color:var(--accent);animation:spin .9s linear infinite}
 .bounce{display:flex;gap:7px}
 .bounce i{width:11px;height:11px;border-radius:50%;background:var(--accent);animation:bounce .95s ease-in-out infinite}
 .bounce i:nth-child(2){background:var(--brand);animation-delay:.15s}
 .bounce i:nth-child(3){background:var(--ok);animation-delay:.3s}
-.pulse{display:block;width:44px;height:44px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ffc078,var(--accent));animation:pulse 1.3s ease-in-out infinite;box-shadow:0 0 26px rgba(255,153,67,.35)}
+.pulse{display:block;width:44px;height:44px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ffc078,var(--accent));animation:pulse 1.3s ease-in-out infinite;box-shadow:0 0 26px rgba(255, 165, 0,.35)}
 .sep{height:1px;background:var(--line);margin:28px 0 24px}
 .foot{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:11px;border:0;cursor:pointer;background:var(--accent);color:#14211f;font-weight:700;padding:13px 24px;border-radius:11px;font-size:.92rem;transition:.22s;box-shadow:0 10px 24px rgba(255,153,67,.28)}
+.btn{display:inline-flex;align-items:center;gap:11px;border:0;cursor:pointer;background:var(--accent);color:#14211f;font-weight:700;padding:13px 24px;border-radius:11px;font-size:.92rem;transition:.22s;box-shadow:0 10px 24px rgba(255, 165, 0,.28)}
 .btn:hover{filter:brightness(1.08);transform:translateY(-2px)}
 .btn:active{transform:translateY(0)}
 .mini{display:block;width:16px;height:16px;border-radius:50%;border:2.5px solid rgba(20,33,31,.3);border-top-color:#14211f;animation:spin .8s linear infinite}
@@ -84,7 +84,7 @@ h2{font-size:1.35rem;letter-spacing:-.02em;margin-top:7px}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Skeleton — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -168,7 +168,7 @@ h2{font-size:1.35rem;letter-spacing:-.02em;margin-top:7px}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Loading Dots — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -180,7 +180,7 @@ h2{font-size:1.35rem;letter-spacing:-.02em;margin-top:7px}
 .sub{color:var(--muted);font-size:.9rem;margin-top:7px}
 .stack{display:grid;gap:14px}
 .demo{background:var(--panel-2);border:1px solid var(--line);border-radius:14px;padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;transition:.22s}
-.demo:hover{border-color:rgba(255,153,67,.4)}
+.demo:hover{border-color:rgba(255, 165, 0,.4)}
 .cap{font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .dots{display:inline-flex;gap:6px;align-items:center;vertical-align:middle}
 .dots i{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:jump .9s ease-in-out infinite}
@@ -235,7 +235,7 @@ h2{font-size:1.35rem;letter-spacing:-.02em;margin-top:7px}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Typing Indicator — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -308,7 +308,7 @@ a{color:inherit;text-decoration:none}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Radial Progress — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -320,7 +320,7 @@ h2{font-size:1.35rem;letter-spacing:-.02em;margin-top:7px}
 .sub{color:var(--muted);font-size:.9rem;margin-top:7px}
 .row{display:flex;justify-content:center;gap:30px;flex-wrap:wrap}
 .cell{display:flex;flex-direction:column;align-items:center;gap:14px;background:var(--panel-2);border:1px solid var(--line);border-radius:14px;padding:24px 26px;min-width:150px;transition:.25s}
-.cell:hover{border-color:rgba(255,153,67,.45);transform:translateY(-4px);box-shadow:0 16px 34px rgba(0,0,0,.35)}
+.cell:hover{border-color:rgba(255, 165, 0,.45);transform:translateY(-4px);box-shadow:0 16px 34px rgba(0,0,0,.35)}
 .ring{position:relative;width:120px;height:120px}
 svg{width:120px;height:120px;display:block}
 svg circle{fill:none;stroke-width:9;stroke-linecap:round;transform:rotate(-90deg);transform-origin:50% 50%}
@@ -399,24 +399,24 @@ svg circle{fill:none;stroke-width:9;stroke-linecap:round;transform:rotate(-90deg
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Top Progress Bar — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--panel-2:#1d3b39;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--brand:#ff5c5c;--ok:#3ecf8e;--err:#ff6b6b;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;line-height:1.5}
 button,input,select,textarea{font:inherit;color:inherit}
 a{color:inherit;text-decoration:none}
-.bar{position:fixed;top:0;left:0;height:4px;width:0;z-index:99;background:linear-gradient(90deg,var(--accent),var(--brand),var(--accent));background-size:200% 100%;box-shadow:0 0 14px rgba(255,153,67,.75);transition:width .35s ease,opacity .5s ease;animation:sweep 1.1s linear infinite}
+.bar{position:fixed;top:0;left:0;height:4px;width:0;z-index:99;background:linear-gradient(90deg,var(--accent),var(--brand),var(--accent));background-size:200% 100%;box-shadow:0 0 14px rgba(255, 165, 0,.75);transition:width .35s ease,opacity .5s ease;animation:sweep 1.1s linear infinite}
 @keyframes sweep{to{background-position:200% 0}}
 .wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px 26px}
 .card{width:min(560px,100%);background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:36px 32px;text-align:center;box-shadow:0 24px 60px rgba(0,0,0,.35);position:relative;overflow:hidden}
-.card::before{content:"";position:absolute;top:-70px;left:50%;width:240px;height:240px;margin-left:-120px;background:radial-gradient(circle,rgba(255,153,67,.18),transparent 70%);pointer-events:none}
+.card::before{content:"";position:absolute;top:-70px;left:50%;width:240px;height:240px;margin-left:-120px;background:radial-gradient(circle,rgba(255, 165, 0,.18),transparent 70%);pointer-events:none}
 .kicker{font-size:.68rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
 h2{font-size:1.4rem;letter-spacing:-.02em;margin-top:8px;position:relative}
 .sub{color:var(--muted);font-size:.92rem;margin-top:8px;position:relative}
 .meter{margin:26px auto 6px;max-width:380px;height:10px;border-radius:999px;background:rgba(0,0,0,.35);border:1px solid var(--line);overflow:hidden;position:relative}
-.meter i{display:block;height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--brand));transition:width .35s ease;box-shadow:0 0 12px rgba(255,153,67,.5)}
+.meter i{display:block;height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--brand));transition:width .35s ease;box-shadow:0 0 12px rgba(255, 165, 0,.5)}
 .status{font-size:.88rem;color:var(--muted);font-variant-numeric:tabular-nums;position:relative}
 .status.done{color:var(--ok);font-weight:700}
-.btn{margin-top:24px;border:0;cursor:pointer;background:var(--accent);color:#14211f;font-weight:700;padding:13px 26px;border-radius:11px;font-size:.92rem;transition:.22s;box-shadow:0 12px 28px rgba(255,153,67,.3);position:relative}
+.btn{margin-top:24px;border:0;cursor:pointer;background:var(--accent);color:#14211f;font-weight:700;padding:13px 26px;border-radius:11px;font-size:.92rem;transition:.22s;box-shadow:0 12px 28px rgba(255, 165, 0,.3);position:relative}
 .btn:hover{filter:brightness(1.08);transform:translateY(-2px)}
 .btn:active{transform:translateY(0)}
 .hint{margin-top:18px;font-size:.8rem;color:var(--muted);position:relative}

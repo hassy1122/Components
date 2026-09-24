@@ -17,7 +17,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Navbar — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--r:14px;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;line-height:1.5}
 button,input{font:inherit;color:inherit}
@@ -33,7 +33,7 @@ a{color:inherit;text-decoration:none}
 .drop{position:absolute;top:calc(100% + 8px);left:0;min-width:210px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:8px;opacity:0;visibility:hidden;transform:translateY(8px);transition:.2s;box-shadow:0 18px 40px rgba(0,0,0,.4);list-style:none}
 .has-drop:hover .drop,.has-drop:focus-within .drop{opacity:1;visibility:visible;transform:none}
 .drop a{padding:9px 12px;font-size:.9rem;border-radius:8px}
-.drop a:hover{background:rgba(255,153,67,.14);color:var(--accent)}
+.drop a:hover{background:rgba(255, 165, 0,.14);color:var(--accent)}
 .nav-cta{margin-left:auto;display:flex;align-items:center;gap:10px}
 .btn{border:0;cursor:pointer;background:var(--accent);color:#14211f;font-weight:700;padding:10px 18px;border-radius:10px;font-size:.9rem;transition:.2s}
 .btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
@@ -101,7 +101,7 @@ burger.addEventListener('click', function () {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sticky Navbar — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);line-height:1.5}
 button{font:inherit;color:inherit;cursor:pointer}
@@ -160,7 +160,7 @@ onScroll();
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mega Menu — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;line-height:1.5}
 button{font:inherit;color:inherit;cursor:pointer}
@@ -182,7 +182,7 @@ li.open .mega,.mega:hover{opacity:1;visibility:visible;transform:none}
 .mega ul a i{font-style:normal;font-size:1.05rem;line-height:1.3}
 .mega ul b{display:block;font-size:.9rem;font-weight:700}
 .mega ul span{font-size:.78rem;color:var(--muted)}
-.promo{background:linear-gradient(150deg,#2a1f10,#3a1414);border:1px solid rgba(255,153,67,.35);border-radius:14px;padding:18px}
+.promo{background:linear-gradient(150deg,#2a1f10,#3a1414);border:1px solid rgba(255, 165, 0,.35);border-radius:14px;padding:18px}
 .promo b{display:block;font-size:.98rem;margin-bottom:6px}
 .promo p{font-size:.82rem;color:var(--muted);margin-bottom:12px}
 .promo a{font-size:.85rem;font-weight:700;color:var(--accent)}
@@ -246,7 +246,7 @@ document.addEventListener('click', function (e) { if (!prod.contains(e.target)) 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hamburger Menu — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;line-height:1.5}
 a{color:inherit;text-decoration:none}
@@ -316,7 +316,7 @@ document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setO
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sidebar Menu — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;line-height:1.5}
 a{color:inherit;text-decoration:none}
@@ -327,7 +327,7 @@ a{color:inherit;text-decoration:none}
 .label{font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding:14px 12px 6px;font-weight:800}
 .side a{display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:10px;font-size:.92rem;color:var(--muted);transition:.18s}
 .side a:hover{background:rgba(255,255,255,.06);color:var(--text)}
-.side a.on{background:rgba(255,153,67,.14);color:var(--accent);font-weight:700}
+.side a.on{background:rgba(255, 165, 0,.14);color:var(--accent);font-weight:700}
 .side a .dot{margin-left:auto;width:7px;height:7px;border-radius:50%;background:var(--accent);display:none}
 .side a.on .dot{display:block}
 .sub{display:none;padding-left:30px}
@@ -404,7 +404,7 @@ document.querySelectorAll('.side a').forEach(function (a) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Breadcrumbs — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 a{color:inherit;text-decoration:none}
@@ -415,12 +415,12 @@ a{color:inherit;text-decoration:none}
 .crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:.9rem;list-style:none}
 .crumbs li{display:flex;align-items:center;gap:6px}
 .crumbs a{color:var(--muted);padding:5px 9px;border-radius:8px;transition:.18s}
-.crumbs a:hover{color:var(--accent);background:rgba(255,153,67,.12)}
+.crumbs a:hover{color:var(--accent);background:rgba(255, 165, 0,.12)}
 .crumbs .sep{color:#4d6565;font-size:.8rem}
 .crumbs .cur{color:var(--text);font-weight:700;padding:5px 9px;background:rgba(255,255,255,.07);border-radius:8px}
 .crumbs.dots .sep{color:var(--accent)}
 .crumbs.chev a,.crumbs.chev .cur{padding-left:0}
-.badge{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,153,67,.16);color:var(--accent);padding:4px 9px;border-radius:999px;margin-bottom:12px}
+.badge{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:rgba(255, 165, 0,.16);color:var(--accent);padding:4px 9px;border-radius:999px;margin-bottom:12px}
 </style>
 </head>
 <body>
@@ -468,7 +468,7 @@ a{color:inherit;text-decoration:none}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tabs — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button{font:inherit;color:inherit;cursor:pointer}
@@ -540,7 +540,7 @@ moveInd(tabs[0]);
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vertical Tabs — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button{font:inherit;color:inherit;cursor:pointer}
@@ -548,13 +548,13 @@ button{font:inherit;color:inherit;cursor:pointer}
 .list{border-right:1px solid var(--line);padding:16px 12px;display:flex;flex-direction:column;gap:4px;background:rgba(0,0,0,.15)}
 .vtab{display:flex;align-items:center;gap:11px;padding:13px 14px;border-radius:11px;background:transparent;border:0;color:var(--muted);font-size:.93rem;font-weight:600;text-align:left;transition:.2s;position:relative}
 .vtab:hover{background:rgba(255,255,255,.06);color:var(--text)}
-.vtab[aria-selected="true"]{background:rgba(255,153,67,.14);color:var(--accent)}
+.vtab[aria-selected="true"]{background:rgba(255, 165, 0,.14);color:var(--accent)}
 .vtab[aria-selected="true"]::before{content:"";position:absolute;left:-12px;top:20%;height:60%;width:3px;border-radius:3px;background:var(--accent)}
 .body{padding:28px 28px 30px;min-height:280px}
 .vpanel{display:none}
 .vpanel.on{display:block;animation:slide .35s ease}
 @keyframes slide{from{opacity:0;transform:translateX(14px)}to{opacity:1;transform:none}}
-.vpanel .icon{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:rgba(255,153,67,.15);border:1px solid rgba(255,153,67,.3);font-size:1.3rem;margin-bottom:14px}
+.vpanel .icon{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:rgba(255, 165, 0,.15);border:1px solid rgba(255, 165, 0,.3);font-size:1.3rem;margin-bottom:14px}
 .vpanel h3{font-size:1.15rem;margin-bottom:8px}
 .vpanel p{color:var(--muted);font-size:.93rem;margin-bottom:14px}
 .tags{display:flex;flex-wrap:wrap;gap:8px}
@@ -601,7 +601,7 @@ tabs.forEach(function (t, i) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pagination — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button{font:inherit;color:inherit;cursor:pointer}
@@ -666,7 +666,7 @@ render();
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Stepper — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--ok:#3ecf8e;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--ok:#3ecf8e;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px;line-height:1.5}
 button{font:inherit;color:inherit;cursor:pointer}
@@ -678,7 +678,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .step .n{position:relative;z-index:1;width:36px;height:36px;margin:0 auto 8px;border-radius:50%;display:grid;place-items:center;background:var(--bg);border:2px solid var(--line);font-weight:800;font-size:.85rem;transition:.3s}
 .step.done .n,.step.done::before{background:var(--ok);border-color:var(--ok);color:#0c2018}
 .step.done::before{background:var(--ok)}
-.step.now .n{border-color:var(--accent);color:var(--accent);box-shadow:0 0 0 5px rgba(255,153,67,.18)}
+.step.now .n{border-color:var(--accent);color:var(--accent);box-shadow:0 0 0 5px rgba(255, 165, 0,.18)}
 .step.now{color:var(--text);font-weight:700}
 .panel{min-height:140px}
 .panel h3{font-size:1.1rem;margin-bottom:8px}
@@ -752,7 +752,7 @@ render();
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bottom Nav — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);min-height:100vh;line-height:1.5;padding-bottom:96px;display:flex;flex-direction:column;align-items:center}
 .screen{width:min(430px,100%);min-height:100vh;padding:34px 22px 110px;position:relative}
@@ -766,7 +766,7 @@ body{background:var(--bg);color:var(--text);min-height:100vh;line-height:1.5;pad
 .bitem{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:9px 4px;border-radius:14px;background:transparent;border:0;color:var(--muted);font-size:.66rem;font-weight:700;cursor:pointer;transition:.2s;position:relative}
 .bitem .ic{font-size:1.15rem;line-height:1;transition:.2s}
 .bitem:hover{color:var(--text)}
-.bitem.on{color:var(--accent);background:rgba(255,153,67,.13)}
+.bitem.on{color:var(--accent);background:rgba(255, 165, 0,.13)}
 .bitem.on .ic{transform:translateY(-2px) scale(1.12)}
 .cnt{position:absolute;top:4px;right:calc(50% - 20px);min-width:16px;height:16px;padding:0 4px;border-radius:999px;background:#ff5c5c;color:#fff;font-size:.6rem;display:grid;place-items:center;font-weight:800}
 </style>
@@ -812,7 +812,7 @@ document.querySelectorAll('.bitem').forEach(function (b) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Anchor Nav — hasSy UI</title>
 <style>
-:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ff9f43;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+:root{--bg:#0f1f1e;--panel:#16302f;--line:rgba(255,255,255,.1);--text:#eef4f4;--muted:#a2b5b5;--accent:#ffa500;--font:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
 body{background:var(--bg);color:var(--text);line-height:1.5}
 a{color:inherit;text-decoration:none}
