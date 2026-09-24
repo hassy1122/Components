@@ -283,7 +283,7 @@ code {
   font-weight: 800;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--accent-strong);
+  color: var(--text);
   margin: 14px 10px 8px;
 }
 .toc-title:first-child { margin-top: 0; }
